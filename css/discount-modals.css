@@ -1,0 +1,277 @@
+*, .banner {
+	box-sizing: border-box
+}
+
+.banner, .packages-modal, .sale-modal, .sale-modal-bg {
+	position: fixed;
+	transition: opacity .8s,visibility .8s;
+	opacity: 0;
+	right: 0;
+	visibility: hidden;
+	width: 37%
+}
+
+.banner img {
+	border-style: none;
+	height: auto;
+	max-width: 100%
+}
+
+.banner, .packages-modal, .packages-modal_container, .packages-modal_left img, .sale-modal, .sale-modal-bg, .sale-modal_container {
+	height: 100%
+}
+
+.banner {
+	z-index: 1045;
+	top: 0;
+	text-align: center
+}
+
+.invite-modal_content-wrap, .packages-modal_content, .sale-modal_content {
+	background-repeat: no-repeat
+}
+
+.blackfriday-modal_container, .cashback-modal_container, .invite-modal_container {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	margin: 0 auto
+}
+
+.blackfriday-modal_content-wrap, .cashback-modal_content-wrap, .invite-modal_content-wrap {
+	display: flex;
+	background-image: url(../images/referral_illustration2.png);
+	border-radius: 22px;
+	background-size: cover;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: left;
+	max-width: 950px;
+	margin: auto;
+	height: 445px;
+	padding: 50px 50px 50px 250px
+}
+
+.cashback-modal_content, .invite-modal_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto 0 0
+}
+
+.cashback-modal_content h2, .invite-modal_content h2 {
+	font-size: 32px;
+	margin-top: 0;
+	color: #211a52;
+	font-family: FilsonProMedium,sans-serif
+}
+
+.accent-sale, .cashback-modal_content h2 span, .invite-modal_content h2 span {
+	background-color: #f5cb08
+}
+
+.cashback-modal_content .reward-program, .invite-modal_content .reward-program {
+	text-align: center;
+	color: #211a52
+}
+
+.packages-modal_content, .sale-modal_content {
+	border-radius: 22px;
+	transform: translateY(-50%);
+	height: 387px;
+	display: flex
+}
+
+.hidden-fees {
+	position: absolute;
+	bottom: 20px;
+	left: 120px;
+	color: #21143f;
+	font-weight: 400
+}
+
+.packages-modal_content .book-link, .sale-modal_content .book-link {
+	padding: 17px 0;
+	border-radius: 6px;
+	width: 300px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #42337e;
+	font-weight: 500;
+	color: #fff;
+	margin-top: -50px;
+	font-size: 16px;
+	text-decoration: none
+}
+
+.packages-modal_content .book-link:hover, .sale-modal_content .book-link:hover {
+	opacity: .9
+}
+
+.packages-modal_content .reward-program, .sale-modal_content .reward-program {
+	color: #4da1ff;
+	width: 300px;
+	text-align: center
+}
+
+.packages-modal_content .reward-program:hover, .sale-modal_content .reward-program:hover {
+	opacity: .8
+}
+
+.packages-modal, .sale-modal {
+	text-align: center;
+	top: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.packages-modal_container, .sale-modal_container {
+	position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center
+}
+
+.close-btn {
+	position: absolute;
+	display: inline-block;
+	top: 3px;
+	right: 16px;
+	width: 30px;
+	height: 40px;
+	transform: rotate(45deg);
+	cursor: pointer;
+	font-size: 50px;
+	font-weight: 100;
+	font-family: serif;
+	color: #323c47;
+	transition: text-shadow .4s
+}
+
+.close-btn:hover {
+	text-shadow: 2px 1px 3px rgba(64,57,31,.7)
+}
+
+
+@media screen and (max-width:1440px) {
+	.invite-modal_content-wrap, .packages-modal_content {
+		width: 60%
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.invite-modal_content-wrap, .packages-modal_content {
+		width: 70%
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.invite-modal_content-wrap, .packages-modal_content, .sale-modal_content {
+		width: 80%
+	}
+}
+
+@media screen and (max-width:980px) {
+	.hidden-fees {
+		bottom: 10px;
+		left: 50px
+	}
+}
+
+@media screen and (max-width:768px) {
+	.hidden-fees {
+		bottom: 185px;
+		left: 32px
+	}
+}
+
+@media screen and (max-width:581px) {
+	.second_main {
+		margin-top: 0
+	}
+
+	.header_main h1 {
+		font-size: 30px;
+		margin-bottom: 70px
+	}
+
+	.header_banner h2, .package-work h2 {
+		font-size: 24px
+	}
+
+	.header_banner p {
+		font-size: 12px
+	}
+
+	.modal-declined__head .modal-declined__head_title, .package-offer__form_title {
+		font-size: 20px
+	}
+
+	.terms {
+		margin-top: 20px
+	}
+
+	.modal-declined p {
+		font-size: 14px
+	}
+
+	.header_banner {
+		background-position: center
+	}
+
+	.main .package-work h2 {
+		padding-bottom: 0;
+		margin-bottom: 0
+	}
+
+	.terms__wrap h2 {
+		font-size: 22px
+	}
+
+	.terms__wrap {
+		padding: 40px 25px
+	}
+
+	.terms__wrap li, .terms__wrap p {
+		font-size: 14px
+	}
+
+	.terms__wrap ul {
+		padding: 0
+	}
+
+	.header_main {
+		padding-bottom: 8.3%
+	}
+
+	.header_main .section_title {
+		padding-top: 10px
+	}
+
+	.footer_location ul {
+		flex-direction: column;
+		padding-left: 0
+	}
+
+	.footer_location ul li {
+		margin-bottom: 10px
+	}
+
+	.footer_location ul li + li {
+		border: 0
+	}
+
+	.footer_location ul li:last-child {
+		border-right: none
+	}
+}
+
+@media screen and (max-width:500px) {
+	.hidden-fees {
+		bottom: 130px;
+		left: 34px
+	}
+}

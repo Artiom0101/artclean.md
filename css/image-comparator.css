@@ -1,0 +1,34 @@
+.js-comp-image-container {
+	position: relative;
+	height: 500px;
+	width: 300px;
+	flex: 0 0 auto;
+	overflow: hidden
+}
+
+.js-comp-image {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden
+}
+
+	.js-comp-image img {
+		display: block;
+		vertical-align: middle
+	}
+
+.js-comp-image-slider {
+	position: absolute;
+	z-index: 9;
+	cursor: ew-resize;
+	width: 49px;
+	height: 49px;
+	background: url('../images/comp-image-slider.png');
+	opacity: .7;
+	border-radius: 50%
+}
+
+	.js-comp-image-slider:active {
+		opacity: 1
+	}

@@ -1,0 +1,401 @@
+@media screen and (max-width: 1440px) {
+    .home-header-wave {
+        background: url(../images/wave.png) no-repeat left bottom;
+        background-size: cover;
+        width: 100%;
+        height: 470px;
+        position: absolute;
+        z-index: -1;
+        bottom: -52px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /*.cleaning-content--right img {
+        object-position: 10px 250px;
+    }*/
+    .book-now {
+        flex-direction: column;
+    }
+
+    /*button:not(:disabled) {
+        width: 100%;
+    }*/
+    .book-btn {
+        width: 100%;
+    }
+
+    .domestic-left input {
+        width: 100%;
+    }
+
+    .domestic-right {
+        width: 75%;
+    }
+
+    .section-content {
+        padding: 80px 0 81px;
+    }
+
+    .main-title {
+        line-height: 40px !important;
+    }
+
+    .additional-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-container {
+        position: fixed;
+    }
+
+    .header_right {
+        display: none !important;
+    }
+
+    .burger {
+        display: block !important;
+    }
+
+    .main-block-height .enter_post {
+        width: calc(100% - 135px);
+    }
+
+    .cleaning-content--right img {
+        object-position: 10px 140px;
+    }
+
+    .domestic {
+        margin-top: 0;
+        background-image: url("../images/domestic-background-small.png");
+        background-position: bottom;
+        margin-bottom: 0;
+    }
+
+    .domestic-section {
+        flex-direction: column;
+        margin-bottom: 190px;
+    }
+
+    .domestic-left {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .domestic-left .section_title {
+        margin-bottom: 12px;
+    }
+
+    .domestic-left p {
+        margin-bottom: 24px;
+    }
+
+    .domestic-right {
+        width: 100%;
+    }
+
+    .windows-cleaning {
+        margin-top: 23px;
+        margin-left: -74px;
+    }
+
+    .bookcases-cleaning {
+        position: absolute;
+        top: 64px;
+        left: 265px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .fridge-cleaning {
+        top: 18px;
+    }
+
+    .kitchen-cabinets-cleaning {
+        left: 125px;
+        top: 235px;
+    }
+
+    .linens-cleaning {
+        top: 266px;
+        right: 80px;
+    }
+
+    .book-btn.additional {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .experience__description {
+        max-width: 100%;
+    }
+
+    .experience__image {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .experience__item_important {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cleaning-content--left {
+        width: 100%;
+        margin-bottom: 0;
+        height: 701px;
+    }
+
+    .cleaning-content--right {
+        position: static;
+        width: 100%;
+        height: 701px;
+    }
+
+    .cleaning-content--right img {
+        object-position: unset;
+        height: 339px;
+    }
+
+    .header__advantages > div {
+        width: 100%;
+    }
+
+    .cleaning-content--right div {
+        height: unset;
+    }
+
+    .header_form.content-input.ng-pristine.ng-valid {
+        position: absolute;
+        width: 100%;
+        bottom: 56px;
+        right: 8%;
+        padding: 12px;
+        border: 0;
+        background-color: #fff;
+        max-width: 84%;
+    }
+
+    .header_form.content-input.ng-pristine.ng-valid .enter_post {
+        border: 2px solid #9583DB;
+        width: 100%;
+        margin-bottom: 12px;
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .header_form.content-input.ng-pristine.ng-valid .not-valid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-header-wave {
+        background: url(../images/header-wave-small.png) no-repeat left bottom;
+        background-size: contain;
+        bottom: -100px;
+    }
+
+    .cleaning-category {
+        padding-inline: 20px;
+    }
+
+    .category-card-container a:last-child {
+        grid-area: last-category;
+    }
+
+    .category-card-container {
+        grid-template-areas:
+            'auto auto'
+            'auto auto'
+            'last-category last-category';
+        grid-template-columns: unset;
+    }
+
+    .service-image img {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .included-service-card {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .best_item {
+        background-color: #F8F8FF;
+        flex-direction: column;
+        border: none;
+    }
+
+    .best_items, .best_items > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .domestic-section {
+        margin-bottom: 25px;
+    }
+
+    .domestic-services span {
+        font-size: 8px;
+    }
+
+    .windows-cleaning {
+        width: 110px;
+        height: 110px;
+    }
+
+        .windows-cleaning img, .linens-cleaning img {
+            width: 44px;
+        }
+
+    .bookcases-cleaning {
+        width: 90px;
+        height: 90px;
+        left: 120px;
+    }
+
+        .bookcases-cleaning img {
+            width: 36px;
+        }
+
+    .fridge-cleaning {
+        width: 104px;
+        height: 104px;
+    }
+
+        .fridge-cleaning img {
+            width: 40px;
+        }
+
+    .linens-cleaning {
+        width: 108px;
+        height: 108px;
+        top: 150px;
+        right: 200px;
+        left: 0;
+    }
+
+    .kitchen-cabinets-cleaning {
+        width: 135px;
+        height: 135px;
+        left: unset;
+        top: 165px;
+        right: 33px;
+    }
+
+        .kitchen-cabinets-cleaning img {
+            width: 55px;
+        }
+
+    .additional-title {
+        font-size: 30px;
+        margin: 56px 0;
+        color: #453283;
+        margin-bottom: 0;
+        margin-left: 22px;
+    }
+
+    .order_now {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 420px;
+        margin-top: 0;
+    }
+
+    .section-content {
+        background-image: url(../images/bot_cta_small.png);
+        background-size: contain;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .section-content {
+        background-image: url(../images/bot_cta_small.png);
+        background-size: contain;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header_form.content-input.ng-pristine.ng-valid {
+        max-width: 93%;
+        right: unset;
+    }
+
+    .home-header-wave {
+        bottom: -80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__advantages > div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .home-header-wave {
+        bottom: -55px;
+    }
+
+    .locations-page .zero-step__area {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header_form.content-input.ng-pristine.ng-valid {
+        bottom: 110px;
+    }
+
+    .locations-page .zero-step__area {
+        padding-top: 95px;
+    }
+
+    .main-block-height {
+        height: 720px;
+    }
+
+    .home-header-wave {
+        bottom: 0px;
+        z-index:9
+    }
+
+    .book-now {
+        width: 100%;
+    }
+
+    .cleaning-burden .book-now {
+        top: 15px;
+    }
+
+    .book-cleaning {
+        width: 100%;
+    }
+
+    .order_now {
+        height: 560px;
+        margin-top: -77px;
+        margin-inline: -16px;
+    }
+
+    .additional-title {
+        line-height: 43px;
+        z-index: 1;
+    }
+}

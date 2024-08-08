@@ -1,0 +1,99 @@
+.advertaising, .advertaising__form {
+	box-sizing: border-box;
+	display: flex
+}
+
+.advertaising__button, .advertaising__title {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700
+}
+
+.advertaising {
+	background: url(../images/borough-advertaising.jpg) center/cover no-repeat;
+	justify-content: center;
+	align-items: center;
+	max-width: 1400px;
+	min-height: 484px;
+	margin: 0 auto;
+	border-bottom: 1px solid #d5dfe6
+}
+
+.borough-advertaising {
+	margin-top: 24px
+}
+
+.advertaising__form {
+	max-width: 516px;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 200px
+}
+
+.advertaising__title {
+	font-size: 50px;
+	line-height: 60px;
+	color: #21143f;
+	margin: 0
+}
+
+.advertaising__img {
+	display: none;
+	margin: 42px 0 0
+}
+
+.advertaising__button {
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 12px;
+	margin: 24px 0 0;
+	min-width: 246px;
+	background: #35d073;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer
+}
+
+@media screen and (max-width:900px) {
+	.advertaising {
+		background: url(../images/borough-advertaising_shape.jpg) center/cover no-repeat;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #d7dfe5
+	}
+
+	.advertaising__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px;
+		margin: 18px auto 0 22px;
+		max-width: 85%
+	}
+
+	.advertaising__form {
+		margin-top: 30px
+	}
+
+	.advertaising__img {
+		width: 100%;
+		display: block
+	}
+
+	.advertaising__button {
+		width: 90%;
+		margin: 28px auto 0;
+		align-self: center;
+		font-size: 16px;
+		line-height: 24px
+	}
+}
+
+@media screen and (max-width:425px) {
+	.advertaising .book-input {
+		width: 100%
+	}
+
+	.advertaising .book-cleaning {
+		padding-inline: 16px
+	}
+}

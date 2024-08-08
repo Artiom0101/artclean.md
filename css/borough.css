@@ -1,0 +1,1024 @@
+@import url(normalize.css);
+@import url(Nunito.css);
+
+.body, html {
+	overflow-x: hidden
+}
+
+.borough-service-gradient:before {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	z-index: 2;
+	content: '';
+	left: 0
+}
+
+.prices {
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 90px 0 0;
+}
+
+.prices__form {
+	box-sizing: border-box
+}
+
+.areas__items, .cleaners__items, .services__list {
+	list-style-type: none
+}
+
+.body {
+	font-family: Arial,sans-serif;
+	margin: 0 auto;
+	min-width: 320px;
+	background: #fff;
+	position: relative
+}
+
+.borough-advantages span, .ecover_img {
+	margin-left: 5px
+}
+
+.borough-trustpilot-context {
+	position: absolute;
+	bottom: 120px;
+	left: 0
+}
+
+	.borough-trustpilot-context .trustpilot-header {
+		margin-bottom: 16px
+	}
+
+.borough__title {
+	font-family: 'Nunito Sans';
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 80px;
+	color: #453283;
+	max-width: 861px
+}
+
+.mattress-header .borough__title {
+	max-width:940px;
+}
+
+.borough__subheading {
+	font-size: 20px !important;
+	margin-top: 0 !important
+}
+
+.borough-advantages span, .borough__advantages-item {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	font-family: 'Nunito Sans';
+	color: #0043a7
+}
+
+.borough-advantages {
+	display: flex;
+	gap: 24px;
+	margin-top: -20px;
+	margin-bottom: 32px
+}
+
+.advantages-part {
+	display: flex;
+	flex-direction: column;
+	gap: 24px
+}
+
+.borough__advantages-item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	letter-spacing: -.06px
+}
+
+.ecover_img {
+	width: 31px
+}
+
+.borough-advantages img {
+	margin-right: 10px
+}
+
+.borough-header-wave {
+	background-size: cover;
+	width: 100%;
+	height: 470px;
+	position: absolute
+}
+
+.borough-service-gradient {
+	position: relative
+}
+
+.services {
+	background: url(../images/borough-desktop.jpg) center/cover no-repeat #f8f8ff;
+	width: 100%;
+	padding: 6px 0 0;
+	margin-top: 100px;
+	height: 735px;
+	max-width: unset
+}
+
+.services__content {
+	margin: 0 auto;
+	max-width: 1132px
+}
+
+@media screen and (max-width:1200px) {
+	.services__content {
+		margin: 0 16px
+	}
+
+	.borough-trustpilot-context {
+		bottom: 140px
+	}
+}
+
+@media screen and (max-width:475px) {
+	.services {
+		background: url(../images/borough-mobile.jpg) center/cover no-repeat;
+		margin-top: 60px
+	}
+
+	.services__content {
+		padding: 0 !important
+	}
+
+	.borough__title {
+		font-size: 30px !important;
+		line-height: 40px;
+		padding-top: 68px;
+		margin-bottom: 45px
+	}
+
+	.borough-trustpilot-context {
+		bottom: 20px
+	}
+
+	.borough__advantages-item {
+		font-weight: 400
+	}
+
+	.borough-advantages {
+		gap: 5px
+	}
+
+	.advantages-part {
+		gap: 10px
+	}
+}
+
+.services__form {
+	margin: 20px 0 0;
+	max-width: 556px
+}
+
+.services__title {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	color: #0043a7;
+	margin: 0;
+	max-width: 630px
+}
+
+.services__list {
+	display: none;
+	padding: 0;
+	margin: 16px 0 0
+}
+
+.borough-services a {
+	text-decoration: none !important;
+	text-underline-offset: unset
+}
+
+.borough-services h3 {
+	font-family: 'Nunito Sans';
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 32px;
+	color: #0043a7;
+	margin-bottom: 10px;
+	margin-top: 16px;
+	white-space: pre-wrap
+}
+
+.borough-price-text, .borough-services p {
+	font-weight: 400;
+	line-height: 24px;
+	font-family: 'Nunito Sans'
+}
+
+.borough-services p {
+	font-size: 16px;
+	color: #323c47;
+	white-space: pre-wrap;
+	margin: 0
+}
+
+.borough-services .price {
+	color: #6593ff;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.borough-services-body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	white-space: nowrap;
+	justify-content: space-between;
+	margin: 24px 0 0;
+	padding: 0
+}
+
+.borough-service {
+	width: 306px;
+	background: #fdfdfd;
+	border: 1px solid #e6ebef;
+	border-radius: 12px;
+	list-style: none
+}
+
+	.borough-service img {
+		width: 100%;
+		max-height: 150px;
+		height: 100%;
+		object-position: bottom;
+		border-radius: 12px
+	}
+
+.borough-service-gradient:before {
+	background: linear-gradient(0deg,rgba(51,40,85,.32),rgba(51,40,85,.32)) !important;
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	border-radius: 12px
+}
+
+.borough-service .text {
+	padding-inline: 16px;
+	padding-bottom: 24px;
+	width: 306px
+}
+
+.borough-price-text {
+	font-size: 18px;
+	color: #453283;
+	margin-top: 12px;
+	margin-bottom: 32px;
+	height: 145px
+}
+
+@media screen and (max-width:500px) {
+	.prices_block .borough-price-text {
+		height: 150px !important
+	}
+	.borough-book {
+		gap: 55px !important
+	}
+}
+
+.borough-book {
+	display: flex;
+	flex-direction: column;
+	gap: 32px
+}
+
+.cities .borough-book {
+	gap: 55px !important;
+}
+
+.borough-book-input {
+	position: relative;
+	display: flex;
+	gap: 16px
+}
+
+.borough-book-input input {
+	width: 502px;
+	height: 58px;
+	background: #fff;
+	border: 2px solid #6593ff;
+	border-radius: 5px;
+	padding-left: 50px;
+	font-weight: 700;
+	font-size: 16px
+}
+
+.borough-book-input input::placeholder {
+	font-family: 'Nunito Sans';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	color: #453283;
+	opacity: .56
+}
+
+.borough-book-input img {
+	position: absolute;
+	top: 17px;
+	left: 20px
+}
+
+.services__info-content {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	color: #453283
+}
+
+.services__info {
+	margin: 40px 0 132px;
+	width: 100%
+}
+
+.services__info-content {
+	margin: 0 auto;
+	max-width: 1132px
+}
+
+.services__info-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -.5px
+}
+
+.prices__cashback, .prices__heading {
+	font-weight: 800;
+	font-family: 'Nunito Sans';
+	font-style: normal
+}
+
+.prices__options {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 12px;
+	margin: 0
+}
+
+.prices__form {
+	flex-grow: 1;
+	max-width: 550px;
+	min-width: 343px;
+	background: #fff;
+	border: 2px solid #e6ebef;
+	border-radius: 6px;
+	transition: .2s;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 32px 24px 30px
+}
+
+	.prices__form:hover {
+		border: 2px solid #8365ff
+	}
+
+.prices__cashback {
+	font-size: 14px;
+	line-height: 22px;
+	color: #544121;
+	padding: 4px 13px;
+	margin: 0 0 0 5px;
+	background: #ffe39f;
+	border: 6px solid #fff;
+	border-radius: 20px;
+	position: absolute;
+	top: -25px;
+	left: 12px;
+	display: none
+}
+
+.prices__cashback_active {
+	display: block
+}
+
+.prices__heading {
+	font-size: 24px;
+	line-height: 32px;
+	color: #323c47;
+	margin: 0
+}
+
+.prices__cost {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 24px;
+	letter-spacing: -.25px;
+	color: #6593ff;
+	margin: 10px 0 0
+}
+
+@media screen and (max-width:400px) {
+	.prices__heading {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px
+	}
+
+	.prices__cost {
+		font-size: 18px
+	}
+}
+
+.prices__booking {
+	width: 100%;
+	min-height: 50px;
+	background: #35d073;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	margin-top: auto;
+	cursor: pointer
+}
+
+.booking, .cleaners__item {
+	display: flex;
+	border-radius: 12px;
+	box-sizing: border-box
+}
+
+@media screen and (max-width:1200px) {
+	.prices {
+		margin: 0 16px
+	}
+}
+
+@media screen and (max-width:900px) {
+	.services {
+		padding: 0
+	}
+
+	.services__content {
+		padding: 5px
+	}
+
+	.prices__options {
+		gap: 28px;
+		justify-content: center
+	}
+}
+
+.booking {
+	max-width: 1132px;
+	margin: 80px auto 80px;
+	padding: 28px 32px;
+	background: #f8f8ff;
+	flex-direction: column;
+	align-items: flex-start
+}
+
+.booking__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0
+}
+
+.booking__title {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 32px;
+	color: #453283;
+	margin: 0
+}
+
+.booking__subtitle, .cleaners_text {
+	font-family: 'Nunito Sans';
+	font-weight: 400
+}
+
+.booking__subtitle, .cleaners_text {
+	font-size: 16px;
+	line-height: 24px
+}
+
+.booking__subtitle {
+	font-style: normal;
+	color: #2f3c48;
+	margin: 12px 0 0
+}
+
+.booking__place {
+	margin: 32px 0 0;
+	align-self: stretch
+}
+
+.cleaners {
+	max-width: 1132px;
+	height: 800px;
+	margin-inline: auto;
+	padding: 100px 0 0;
+	position: relative
+}
+
+.main .cleaners {
+	background: url(../images/professionals-wave.png) left bottom no-repeat;
+	max-width: 1400px;
+	padding: 125px 0 0
+}
+
+.cleaners__items {
+	display: flex;
+	max-width: 1132px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 32px 0 0;
+	padding: 0;
+	overflow: hidden;
+	gap: 24px
+}
+
+.cleaners__item {
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 306px;
+	min-height: 228px;
+	background: #fdfdfd;
+	border: 1px solid #e6ebef
+}
+
+.cleaners__image {
+	width: 306px;
+	height: 210px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	object-fit: cover
+}
+
+.cleaners__place {
+	padding: 12px 16px 24px;
+	border-top: none
+}
+
+.cleaners_text {
+	color: #323c47;
+	max-width: 330px;
+	overflow: hidden;
+	margin: 7px 0 0
+}
+
+.cleaners__name {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700
+}
+
+.cleaners__name {
+	font-size: 18px;
+	line-height: 28px;
+	color: #323c47;
+	margin: 0;
+	padding: 0;
+	max-width: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.info__partial-container p, .info__subtitle, .review__rate {
+	font-family: 'Nunito Sans';
+	font-weight: 400;
+	font-style: normal
+}
+
+.review__stars {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: 2px 0 8px
+}
+
+.review__star {
+	background: url(../images/star.png) center no-repeat;
+	width: 14.38px;
+	height: 13.68px;
+	margin-right: 2px
+}
+
+.review__rate {
+	font-size: 12px;
+	line-height: 16px;
+	color: #868f96;
+	margin: 0
+}
+
+.info {
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 104px 0 0
+}
+
+.info__partial-container p, .info__subtitle {
+	font-size: 16px;
+	line-height: 24px;
+	color: #323c47;
+	margin: 24px 0 0
+}
+
+.info__partial-container h2, .info__title {
+	font-size: 30px;
+	line-height: 40px;
+	color: #453283;
+	font-weight: 700;
+	font-family: 'Nunito Sans'
+}
+
+.info__partial-container h2 {
+	font-style: normal;
+	letter-spacing: -.25px;
+	margin: 32px 0 0
+}
+
+.info__partial-container ul {
+	padding-left: 0;
+	list-style: none
+}
+
+.info__partial-container li {
+	position: relative;
+	padding-left: 14px;
+	color: #323c47;
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	letter-spacing: -.25px;
+	line-height: 26px;
+	margin: 21px auto
+}
+
+	.info__partial-container li:before {
+		content: '•';
+		color: #6593ff;
+		position: absolute;
+		left: 0
+	}
+
+.info__news {
+	display: flex;
+	flex-direction: column
+}
+
+.info__title {
+	text-align: left;
+	margin: 0;
+	margin-bottom: -28px !important
+}
+
+.borough_info_subheading {
+	font-weight: 700;
+	font-family: 'Nunito Sans';
+	font-style: normal
+}
+
+.borough-even {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 28px
+}
+
+.borough-even-part {
+	width: 50%
+}
+
+.borough-reverse {
+	flex-direction: row-reverse
+}
+
+.borough-info {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-top: 60px;
+	gap: 28px
+}
+
+.borough_info_subheading {
+	font-size: 20px !important;
+	line-height: 40px !important;
+	letter-spacing: -.25px;
+	color: #0043a7;
+	margin: 0 !important
+}
+
+.borough-info img {
+	width: 50%;
+	border-radius: 12px
+}
+
+.borough-info span {
+	font-weight: bold;
+	color: #0043a7;
+}
+
+.borough-info h3 {
+	font-family: 'Nunito Sans';
+	font-weight: 600;
+	font-size: 18px;
+	ccolor: #0043a7;
+}
+
+.info-text {
+	width: 50%;
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px
+}
+
+@media screen and (max-width:901px) {
+	.borough-even-part, .borough-info img, .info-text {
+		width: 100%
+	}
+
+	.borough-info {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+		margin-top: 40px
+	}
+
+	.experience__description h3:first-child, .info-text, .info__subtitle:first-child {
+		margin-top: 0
+	}
+
+	.borough-even {
+		flex-direction: column-reverse
+	}
+
+	.info__subtitle {
+		margin-top: 16px
+	}
+}
+
+.others {
+	width: 100%;
+	background: #f9f8ff;
+	margin: 80px 0 0;
+	border-bottom: 1px solid #d5dfe6
+}
+
+.experience__text {
+	color: #323c47 !important;
+	margin: 0 !important
+}
+
+.experience__subheading {
+	font-family: 'Nunito Sans';
+	font-weight: 700 !important;
+	font-size: 20px !important;
+	line-height: 28px;
+	color: #0043a7;
+	margin: 0
+}
+
+.experience__blocks {
+	padding: 0
+}
+
+.experience__description h3 {
+	font-family: 'Nunito Sans';
+	font-weight: 600;
+	font-size: 18px;
+	color: #0043a7
+}
+
+.experience__block {
+	background: url(../images/listStyleType.png) 0 7px no-repeat;
+	padding: 0 0 0 16px;
+	list-style: none;
+	margin: 16px 0 0 !important;
+	position: unset !important
+}
+
+@media screen and (max-width:768px) {
+	.experience__blocks {
+		margin-top: 20px
+	}
+
+	.experience__block {
+		margin: 8px 0 0
+	}
+}
+
+.others__content {
+	padding: 32px 0 20px
+}
+
+.areas {
+	width: 100%;
+	margin: 103px 0 0;
+	background: url(../images/IMAGE.png) center/cover no-repeat
+}
+
+.areas__content {
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 30px 0 20px;
+	box-sizing: border-box
+}
+
+.areas__items {
+	margin: 24px 0 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 870px;
+	box-sizing: border-box
+}
+
+.areas__item {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0043a7;
+	background: rgba(255,255,255,.8);
+	border: 1px solid #c3bcdf;
+	border-radius: 21.5px;
+	padding: 5px 11px;
+	margin: 0 8px 18px 0;
+	box-sizing: border-box
+}
+
+.areas__item a {
+	text-decoration: none;
+	color: inherit
+}
+
+@media screen and (max-width:1200px) {
+	.booking, .info, .others__content {
+		margin: 0 16px
+	}
+
+	.service-types .booking {
+		margin: 80px 16px 80px;
+	}
+
+	.cleaners {
+		margin: 0
+	}
+
+	.margin {
+		padding: 46px 0 0
+	}
+
+	.areas__content {
+		margin: 0 16px;
+		padding: 30px 0 8px
+	}
+}
+
+@media screen and (max-width:600px) {
+	.borough__title {
+		font-size: 50px
+	}
+
+	.services__form {
+		margin: 50px 0 0;
+		border-radius: 6px;
+		padding-block: 12px;
+		border: none;
+		flex-direction: column;
+		gap: 12px;
+		height: 158px
+	}
+
+	.services__title {
+		font-size: 30px;
+		line-height: 40px
+	}
+
+	.services__list {
+		display: block
+	}
+
+	.prices{
+		padding: 56px 0 0
+	}
+
+	.prices__form {
+		padding: 18px 16px 16px
+	}
+
+	.prices__cost {
+		margin-top: 6px
+	}
+
+	.prices__booking {
+		font-size: 16px;
+		line-height: 24px
+	}
+
+	.booking {
+		margin: 54px 16px 0;
+		padding: 16px
+	}
+
+	.booking__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px
+	}
+
+	.booking__subtitle {
+		margin: 11px 0 0
+	}
+
+	.booking__place {
+		margin: 22px 0 0;
+		background: 0 0;
+		padding: 0
+	}
+
+	.cleaners {
+		margin-top: 50px;
+		padding: 140px 16px 90px;
+		margin-right: -16px;
+		margin-left: 0
+	}
+
+	.cleaners__upholstery-cleaning {
+		padding: 32px 0 0
+	}
+
+	.cleaners__items {
+		margin: 24px 0 0
+	}
+
+	.review-container {
+		padding: 0 16px;
+		margin-top: 56px
+	}
+
+	.info {
+		padding: 58px 0 0
+	}
+
+	.info__subtitle_location {
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden
+	}
+
+	.borough-info {
+		gap: 12px;
+		margin-top: 24px
+	}
+
+	.borough-even {
+		gap: 12px
+	}
+
+	.info__partial-container p {
+		margin-top: 10px
+	}
+
+	.info__partial-container h2 {
+		font-size: 26px
+	}
+
+	.info__title {
+		margin-bottom: 0 !important
+	}
+
+	.info__subtitle {
+		margin-top: 4px
+	}
+
+	.areas__item {
+		padding: 1px 11px;
+		margin: 0 6px 20px 0
+	}
+}

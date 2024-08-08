@@ -1,0 +1,138 @@
+.trustpilot-context {
+    position: absolute;
+    bottom: 140px
+}
+
+.trustpilot-header {
+    font-size: 50px;
+    color: #323c47;
+    font-family: 'Nunito Sans';
+    font-weight: 700
+}
+
+.trustpilot-link {
+    margin-top: 20px
+}
+
+.trustpilot-link img {
+    margin: 0 3px 0 10px;
+    width: 45px;
+    padding-bottom: 12px
+}
+
+.trustpilot-link a {
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #323c47;
+    text-decoration: none !important
+}
+
+.trustpilot-link a:hover {
+    text-decoration: none;
+    color: #453283
+}
+
+.trustpilot-widget.landing-trustpilot-widget {
+    padding: 20px 0;
+    margin-left: 90px;
+    transform: scale(2)
+}
+
+@media screen and (max-width: 1440px) {
+    .trustpilot-context {
+        bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .trustpilot-context {
+        bottom: 130px;
+    }
+
+    .trustpilot-header {
+        font-size: 30px;
+    }
+
+    .trustpilot-link {
+        margin-top: 10px;
+    }
+
+    .trustpilot-link img {
+        width: 40px;
+    }
+
+    .trustpilot-link a {
+        font-size: 24px;
+    }
+
+    .trustpilot-widget.landing-trustpilot-widget {
+        padding: 20px 0 0;
+        transform: scale(1.5);
+        margin-left: 27px;
+    }
+}
+
+@media (max-width:768px) {
+    .trustpilot-widget.landing-trustpilot-widget {
+        padding: 0;
+        padding-bottom: 20px;
+        transform: scale(1);
+        margin-left: -30px;
+    }
+
+    .trustpilot-header {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .trustpilot-link {
+        margin-top: 0;
+    }
+
+    .trustpilot-link img {
+        width: unset;
+        margin: 0 0 0 5px;
+        padding-bottom: 7px;
+    }
+
+    .trustpilot-link a {
+        font-size: 18px;
+    }
+
+    .trustpilot-context {
+        padding-bottom: 10px;
+        background: #F8F8FF;
+        bottom: 90px;
+        left: 0;
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .trustpilot-context {
+        bottom: 65px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trustpilot-context {
+        padding-bottom: 0;
+        bottom: 45px;
+    }
+}
+
+@media (max-width:480px) {
+    .trustpilot-context {
+        padding-bottom: 0
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .trustpilot-context {
+        bottom: 0px;
+        height: 85px;
+    }
+}

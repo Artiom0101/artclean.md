@@ -1,0 +1,1105 @@
+@import url(normalize.css);
+@import url(Nunito.css);
+
+.body, .cleaners__item, .prices, .prices__info, .prices__points {
+	box-sizing: border-box
+}
+
+.body, html {
+	overflow-x: hidden
+}
+
+.services {
+	margin: 0 auto;
+	max-width: 1132px
+}
+
+.body {
+	font-family: 'Nunito Sans',Arial,sans-serif;
+	font-style: normal;
+	margin: 0 auto;
+	min-width: 320px;
+	background: #fff;
+	position: relative
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 694px;
+	z-index: -1
+}
+
+.services {
+	width: 100%;
+	padding: 44px 0 0
+}
+
+.services__sale {
+	background: #f9f8ff;
+	border-radius: 6px;
+	padding: 6px 8px;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 24px;
+	color: #453283;
+	display: none;
+	margin: 0 12px
+}
+
+.services__sale_active {
+	display: inline-block
+}
+
+.services__form {
+	max-width: 570px;
+	margin-top: 32px
+}
+
+.services__title {
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	color: #453283;
+	margin: 0;
+	max-width: 630px
+}
+
+.faq__title, .section__title {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 40px;
+	color: #0043a7;;
+	margin: 0
+}
+
+.services__image {
+	width: 100%;
+	max-height: 135px;
+	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	border-radius: 12px
+}
+
+.cleaners {
+	max-width: 1132px;
+	height: 800px;
+	margin-inline: auto;
+	margin-top: 10px;
+	padding: 100px 0 0;
+	position: relative
+}
+
+.main .cleaners {
+	background: url(../images/professionals-wave.png) left bottom no-repeat;
+	max-width: 1400px;
+	padding: 125px 0 0
+}
+
+
+.cleaners__items {
+	display: flex;
+	max-width: 1132px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 32px 0 0;
+	padding: 0;
+	overflow: hidden;
+	gap: 24px;
+	list-style-type: none
+}
+
+.cleaners__item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 306px;
+	min-height: 228px;
+	background: #fdfdfd;
+	border-radius: 12px;
+	border: 1px solid #e6ebef
+}
+
+.cleaners__image {
+	width: 306px;
+	height: 210px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	object-fit: cover
+}
+
+.cleaners__place {
+	padding: 12px 16px 24px;
+	border-top: none
+}
+
+.cleaners_text {
+	color: #323c47;
+	max-width: 330px;
+	overflow: hidden;
+	margin: 7px 0 0
+}
+
+.prices_column .section__title_column {
+	display: block
+}
+
+.review-container {
+	margin-top: 80px;
+}
+
+.review__stars {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: 2px 0 8px
+}
+
+.review__star {
+	background: url(../images/star.png) center no-repeat;
+	width: 14.38px;
+	height: 13.68px;
+	margin-right: 2px
+}
+
+.cleaners__name, .review__rate {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	margin: 0
+}
+
+.review__rate {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: #868f96
+}
+
+.cleaners__name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	color: #323c47;
+	padding: 0;
+	max-width: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.prices__cashback, .prices__heading {
+	font-weight: 800;
+	font-family: 'Nunito Sans';
+	font-style: normal
+}
+
+.prices {
+	display: flex;
+	flex-direction: column;
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 98px 0 0;
+	gap: 24px
+}
+
+.service-prices {
+	display: flex;
+	gap: 24px;
+}
+
+@media screen and (max-width:996px) {
+	.service-prices {
+		flex-direction: column;
+	}
+}
+	.faq__body_hidden, .prices .section__title_column {
+		display: none
+	}
+
+	.prices > div {
+		flex: 1 1 50%
+	}
+
+.prices_column {
+	flex-direction: column;
+	gap: 80px
+}
+
+	.prices_column .prices__options {
+		margin-top: 42px
+	}
+
+	.prices_column > div {
+		flex: 1 1 100%
+	}
+
+.prices_office {
+	padding: 60px 0 0
+}
+
+.prices__options {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 24px;
+	height: 100%
+}
+
+.prices__pricing {
+	width: 100%
+}
+
+.prices__info {
+	width: 100%;
+	padding: 24px;
+	background: #f9f8ff;
+	border-radius: 12px;
+	flex-grow: 1
+}
+
+.prices__info_carpet {
+	padding: 24px
+}
+
+.prices__info_large {
+	padding: 34px 32px
+}
+
+.prices__info_office {
+	max-width: 100%;
+	padding: 23px
+}
+
+.prices__head {
+	display: flex;
+	flex-direction: column
+}
+
+.prices__carpet-logo {
+	background: url(../images/carpetLogo.png) center no-repeat;
+	width: 48px;
+	height: 48px
+}
+
+.prices__form, .prices__form-small {
+	background: #fff;
+	position: relative;
+	display: flex;
+	box-sizing: border-box;
+	transition: .2s
+}
+
+.prices__points {
+	margin: 15px 0 0;
+	padding: 0;
+	color: #323c47;
+	list-style-image: url(../images/listStyleType.png)
+}
+
+.prices__point, .prices__point_service {
+	margin-bottom: 8px;
+	margin-left: 16px
+}
+
+.prices__form {
+	border: 2px solid #e6ebef;
+	border-radius: 6px;
+	flex-direction: column;
+	padding: 32px 24px 24px;
+	flex: 1 1 50%
+}
+
+.prices__form-small {
+	flex-grow: 1;
+	width: 100%;
+	border: 2px solid #e6ebef;
+	border-radius: 6px;
+	flex-direction: column;
+	padding: 24px
+}
+
+.prices__form:hover {
+	border: 2px solid #8365ff
+}
+
+.prices__cashback {
+	font-size: 14px;
+	line-height: 22px;
+	color: #544121;
+	padding: 4px 13px;
+	margin: 0 0 0 5px;
+	background: #ffe39f;
+	border: 6px solid #fff;
+	border-radius: 20px;
+	position: absolute;
+	top: -25px;
+	left: 12px;
+	display: none
+}
+
+.prices__cashback_active {
+	display: block
+}
+
+.prices__heading {
+	font-size: 24px;
+	line-height: 32px;
+	color: #323c47;
+	margin: 0
+}
+
+.prices__cost, .prices__day, .prices__tariff {
+	line-height: 24px;
+	font-style: normal;
+	font-family: 'Nunito Sans'
+}
+
+.prices__heading_carpet {
+	margin: 0 9px
+}
+
+.prices__cost {
+	font-weight: 700;
+	font-size: 22px;
+	color: #8365ff;
+	margin: 10px 0 0
+}
+
+.prices__day, .prices__tariff {
+	font-size: 16px;
+	color: #323c47
+}
+
+.prices__items {
+	list-style-type: none;
+	padding: 0;
+	margin: 16px 0
+}
+
+.prices__item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid rgba(134,143,150,.3);
+	mix-blend-mode: normal;
+	padding: 17px 0
+}
+
+.prices__tariff {
+	font-weight: 400;
+	margin: 0 10px 0 0
+}
+
+.experience__text, .prices__text {
+	color: #323c47;
+	margin: 0
+}
+
+.prices__values {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center
+}
+
+.prices__day {
+	font-weight: 400;
+	margin: 0 8px 0 0;
+	display: none
+}
+
+.faq__body, .prices__day_active {
+	display: block
+}
+
+@media screen and (max-width:400px) {
+	.prices__heading {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 24px
+	}
+
+	.prices__cost {
+		font-size: 18px
+	}
+
+	.prices__tariff {
+		font-weight: 700
+	}
+
+	.prices__values {
+		flex-direction: column;
+		align-items: flex-start
+	}
+
+	.prices__day {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 14px
+	}
+}
+
+.prices__booking, .prices__value {
+	font-weight: 700;
+	font-family: 'Nunito Sans';
+	font-style: normal
+}
+
+.prices__value {
+	font-size: 16px;
+	line-height: 18px;
+	text-align: right;
+	color: #8365ff;
+	margin: 0
+}
+
+.prices__booking {
+	width: 100%;
+	min-height: 50px;
+	background: #35d073;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	margin-top: auto;
+	cursor: pointer
+}
+
+.booking, .faq__heading {
+	background: #f8f8ff;
+	box-sizing: border-box;
+	display: flex
+}
+
+.booking {
+	max-width: 1132px;
+	margin: 78px auto 0;
+	padding: 32px;
+	border-radius: 12px;
+	flex-direction: column;
+	align-items: flex-start
+}
+
+.booking__container {
+	max-width: 875px
+}
+
+.experience, .faq, .faq__container {
+	max-width: 1132px
+}
+
+.booking__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0
+}
+
+.booking__title {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 32px;
+	color: #453283;
+	margin: 0
+}
+
+.booking__subtitle {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2f3c48;
+	margin: 12px 0 0
+}
+
+.booking__place {
+	margin: 32px 0 0
+}
+
+.service-cards {
+	max-width: 1132px;
+	margin: 0 auto 0;
+	display: flex;
+	flex-direction: column
+}
+
+.service-cards-container {
+	font-family: 'Nunito Sans';
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 35px;
+	justify-content: center;
+	margin: 32px auto 0;
+}
+
+.service-cards-container h3 {
+	font-family: 'Nunito Sans';
+}
+
+.service-card {
+	width: 354px;
+	min-height: 264px;
+	border: 2px solid #f0ecff;
+	border-radius: 16px;
+	padding: 24px;
+}
+
+.service-card-title {
+	color: #453283;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 32px;
+	margin: 0
+}
+
+.service-card-text {
+	color: #323C47;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.service-important {
+	max-width: 1132px;
+	min-height: 164px;
+	margin: 80px auto 0;
+	background-color: #F8F8FF;
+	padding: 32px;
+	border-radius: 12px;
+	font-family: 'Nunito Sans';
+}
+
+.service-important-text {
+	color: #2F3C48;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.important-checklist {
+	color: #8365FF;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.experience__subheading, .faq__article {
+	font-size: 20px;
+	line-height: 28px;
+	font-family: 'Nunito Sans'
+}
+
+.faq {
+	margin: 0 auto;
+	padding: 80px 0 0;
+	display: flex;
+	flex-direction: column
+}
+
+.faq__container, .faq__container:first-of-type {
+	margin: 23px 0 0
+}
+
+.faq__container {
+	box-sizing: border-box
+}
+
+.faq__heading {
+	border-radius: 24px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 16px
+}
+
+.faq__button {
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 0 3px 12px rgba(0,0,0,.1);
+	outline: 0 !important;
+	border-radius: 48px;
+	background: #fff;
+	cursor: pointer;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0
+}
+
+.faq__img {
+	background: url(../images/arrowButton_inactive.png) center no-repeat;
+	width: 14px;
+	height: 8px;
+	transition: .2s
+}
+
+.faq__button:hover .faq__img {
+	background: url(../images/arrowButton.png) center no-repeat
+}
+
+.faq__article {
+	font-style: normal;
+	font-weight: 600;
+	margin: 0 12px;
+	color: #323c47
+}
+
+.faq__description {
+	margin: 0
+}
+
+.experience {
+	margin: 80px auto 0;
+	display: flex;
+	flex-direction: column
+}
+
+@media screen and (max-width:1200px) {
+	.faq, .prices, .services__content {
+		margin: 0 16px
+	}
+
+	.cleaners {
+		margin: 0
+	}
+
+	.booking {
+		margin: 40px 16px 0;
+		padding: 16px
+	}
+
+	.experience {
+		margin: 0 16px;
+		padding: 46px 0 0
+	}
+
+	.service-cards {
+		margin: 0 16px;
+		padding:  0
+	}
+
+	.service-important {
+		margin: 80px 16px 0; 
+		padding: 24px;
+	}
+}
+
+.experience__item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 32px 0 0;
+	gap: 32px
+}
+
+	.experience__item > * {
+		flex: 0 0 50%
+	}
+
+@media screen and (max-width:996px) {
+	.prices {
+		flex-direction: column;
+		padding: 40px 0 0
+	}
+
+/*	.prices__form {
+		max-width: unset !important;
+	}*/
+}
+@media screen and (max-width:900px) {
+	.services {
+		padding: 10px 0
+	}
+
+	.services__content {
+		padding: 135px 0 0
+	}
+
+	.services__sale {
+		font-size: 18px;
+		margin: 4px 0 0;
+		padding: 4px 6px
+	}
+
+	.prices__options {
+		gap: 28px;
+		justify-content: center;
+		flex-wrap: wrap
+	}
+
+	.prices__form_service {
+		min-height: auto
+	}
+
+	.experience__item {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%
+	}
+
+	.reliable {
+		margin-bottom: -5px !important;
+		padding-left: 0
+	}
+}
+
+.experience__image {
+	max-width: 50%;
+	width: 100%;
+	max-height: 385px;
+	border-radius: 12px;
+	object-fit: cover
+}
+
+.experience__description {
+	max-width: 46%;
+	min-width: 300px
+}
+
+.reliable {
+	margin-bottom: -15px;
+	padding-left: 0
+}
+
+@media screen and (max-width:600px) {
+	.services__form {
+		margin: 30px 0 0;
+		background: #fff;
+		border-radius: 6px;
+		padding: 12px;
+		border: none;
+		flex-direction: column;
+		gap: 12px
+	}
+
+	.services__title {
+		font-size: 30px;
+		line-height: 40px;
+		max-width: 90%
+	}
+
+	.prices__booking, .prices__value {
+		line-height: 24px
+	}
+
+	.cleaners {
+		margin-top: 50px;
+		padding: 140px 0 90px;
+		margin-right: -16px;
+		margin-left: 0
+	}
+
+	.cleaners__items {
+		margin: 24px 0 0
+	}
+
+	.prices {
+		flex-direction: column;
+		padding: 40px 0 0
+	}
+
+	.prices__info {
+		padding: 16px
+	}
+
+	.prices__head {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center
+	}
+
+	.prices__point {
+		margin-bottom: 8px
+	}
+
+	.prices__form, .prices__form-small {
+		padding: 18px 16px 24px;
+		margin-top: 28px
+	}
+
+	.prices__cost {
+		margin-top: 6px
+	}
+
+	.prices__items {
+		margin: 14px 0
+	}
+
+	.prices__item {
+		flex-direction: column;
+		padding: 9px 0
+	}
+
+	.prices__booking {
+		font-size: 16px;
+		min-height: 58px
+	}
+
+	.booking__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 40px
+	}
+
+	.booking__subtitle {
+		margin: 11px 0 0
+	}
+
+	.booking__place {
+		margin: 22px 0 0;
+		background: 0 0;
+		padding: 0
+	}
+
+	.experience, .faq {
+		padding: 44px 0 0
+	}
+
+	.faq__container {
+		margin: 16px 0 0
+	}
+}
+
+.experience__subheading {
+	font-weight: 700;
+	color: #453283;
+	margin: 0
+}
+
+.experience__blocks {
+	padding: 0
+}
+
+	.experience__blocks h3 {
+		font-family: 'Nunito Sans';
+		font-weight: 600;
+		font-size: 18px;
+		margin-block: 5px
+	}
+
+.experience__block {
+	background: url(../images/listStyleType.png) 0 7px no-repeat;
+	padding: 0 0 0 16px;
+	list-style: none;
+	margin: 16px 0 0
+}
+
+.experience__link {
+	margin: 16px 0 0;
+	display: block
+}
+
+@media screen and (max-width:768px) {
+	.advertaising__button, .advertaising__title, .areas__item{
+		font-family: 'Nunito Sans';
+		font-style: normal
+	}
+
+	.experience__blocks {
+		margin-top: 20px
+	}
+
+	.experience__block {
+		margin: 8px 0 0
+	}
+
+	.reasons {
+		padding: 100px 0 0
+	}
+
+	.advertaising, .advertaising__form, .areas__items {
+		box-sizing: border-box;
+		display: flex
+	}
+
+	.reasons__text, .reasons__title {
+		margin: 0
+	}
+
+	.reasons__items {
+		padding: 0;
+		margin: 23px 0 0;
+		list-style-image: url(../images/listStyleType.png)
+	}
+
+	.reasons__item {
+		margin: 0 0 8px 15px
+	}
+
+	.others {
+		width: 100%;
+		background: #f9f8ff;
+		margin: 80px 0 0
+	}
+
+	.others__content {
+		padding: 32px 0 20px
+	}
+
+	.areas {
+		width: 100%;
+		margin: 103px 0 0;
+		background: url(../images/IMAGE.png) center/cover no-repeat
+	}
+
+	.areas__content {
+		max-width: 1132px;
+		margin: 0 auto;
+		padding: 30px 0 20px;
+		box-sizing: border-box
+	}
+
+	@media screen and (max-width:1200px) {
+		.margin, .reasons {
+			padding: 46px 0 0
+		}
+
+		.others__content, .reasons {
+			margin: 0 16px
+		}
+
+		.areas__content {
+			margin: 0 16px;
+			padding: 30px 0 8px
+		}
+	}
+
+	.areas__items {
+		list-style-type: none;
+		margin: 24px 0 0;
+		padding: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 870px
+	}
+
+	.areas__item {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #551a8b;
+		background: rgba(255,255,255,.8);
+		border: 1px solid #c3bcdf;
+		border-radius: 21.5px;
+		padding: 5px 11px;
+		margin: 0 8px 18px 0;
+		box-sizing: border-box
+	}
+
+	.advertaising__button, .advertaising__title {
+		font-weight: 700
+	}
+
+	.areas__item a {
+		text-decoration: none;
+		color: inherit
+	}
+
+	.advertaising {
+		background: url(../images/Group\ 30.png) center/cover no-repeat;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: 300px
+	}
+
+	.advertaising__form {
+		max-width: 516px;
+		flex-direction: column;
+		align-items: flex-start
+	}
+
+	.advertaising__title {
+		font-size: 50px;
+		line-height: 60px;
+		color: #21143f;
+		margin: 0
+	}
+
+	@media screen and (max-width:900px) {
+		.advertaising {
+			background: 0 0
+		}
+
+		.advertaising__title {
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 40px;
+			margin: 74px auto 0 22px;
+			max-width: 85%;
+			color: #453283
+		}
+	}
+
+	@media screen and (max-width:600px) {
+		.reasons__title {
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 28px
+		}
+
+		.areas__item {
+			padding: 1px 11px;
+			margin: 0 6px 20px 0
+		}
+
+		.advertaising__title {
+			margin: 5px auto 0 22px
+		}
+	}
+
+	.advertaising__img {
+		display: none;
+		margin: 42px 0 0
+	}
+
+	.advertaising__button {
+		font-size: 18px;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 12px;
+		margin: 24px 0 0;
+		min-width: 246px;
+		background: #35d073;
+		border-radius: 5px;
+		border: none;
+		cursor: pointer
+	}
+
+	@media screen and (max-width:900px) {
+		.advertaising__img {
+			width: 100%;
+			display: block
+		}
+
+		.advertaising__button {
+			width: 90%;
+			margin: 28px auto 0;
+			align-self: center;
+			font-size: 16px;
+			line-height: 24px
+		}
+	}
+
+	@media screen and (max-width:375px) {
+		.main .cleaners {
+			background: url(../images/professionals-bg-wave.png) left bottom no-repeat;
+			padding-top: 220px
+		}
+	}
+}

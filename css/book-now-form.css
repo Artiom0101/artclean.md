@@ -1,0 +1,113 @@
+.form__booking, .form__point {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box
+}
+
+.form__booking, .form__button, .form__point {
+	box-sizing: border-box
+}
+
+.form__booking {
+	position: relative;
+	min-height: 80px;
+	flex-direction: row;
+	align-items: center;
+	padding: 4px;
+	background: #fff;
+	border: 2px solid #9583db;
+	border-radius: 5px
+}
+
+.form__error {
+	position: absolute;
+	bottom: -25px;
+	color: red
+}
+
+.form__point {
+	flex-direction: row;
+	align-items: center;
+	height: 100%
+}
+
+.form__image {
+	width: 19px;
+	height: 27px;
+	margin: 0 17px
+}
+
+.form__button, .form__input {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	width: 100%
+}
+
+.form__input {
+	color: #453283;
+	opacity: .56;
+	border: none;
+	height: 90%;
+	min-height: 48px;
+	background-color: transparent;
+	background-image: unset !important
+}
+
+	.form__input::placeholder {
+		font-family: 'Nunito Sans';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 28px;
+		color: #453283
+	}
+
+.form__button {
+	background: #35d073;
+	border-radius: 5px;
+	color: #fff;
+	max-width: 148px;
+	height: 100%;
+	min-height: 64px;
+	margin: 0 0 0 auto;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	flex-grow: 1
+}
+
+@media screen and (max-width:600px) {
+	.form__booking {
+		border: none;
+		flex-direction: column;
+		gap: 12px
+	}
+
+	.prices-main .form__booking {
+		padding: 12px
+	}
+
+	.form__point {
+		border: 2px solid #9583db;
+		border-radius: 5px;
+		max-height: 58px;
+		background: #fff
+	}
+
+	.form__image {
+		width: 16px;
+		height: 22px
+	}
+
+	.form__button {
+		max-width: 100%;
+		min-height: 52px
+	}
+}
+@media screen and (max-width:450px) {
+	.form__error {
+		bottom: -50px !important;
+	}
+}

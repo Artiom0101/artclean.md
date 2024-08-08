@@ -1,0 +1,210 @@
+.gift-voucher-modal__content:after, .gift-voucher-modal__content:before {
+	position: absolute;
+	top: 50%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: ''
+}
+
+.gift-voucher-modal {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0
+}
+
+.gift-voucher-modal__content {
+	position: relative;
+	overflow: hidden;
+	width: 50%;
+	max-width: 1660px;
+	z-index: 2;
+	border-radius: 12px;
+	background: linear-gradient(257.87deg,rgba(255,255,255,.72) .48%,rgba(255,255,255,0) 100%),linear-gradient(107.45deg,#96edc3 0,#df8c8c 100.61%);
+	padding: 150px 0 150px 216px
+}
+
+.gift-voucher-modal__content:after {
+	left: 0;
+	transform: translate(-30%,-50%);
+	width: 15.5%;
+	padding-top: 30.4%;
+	background-image: url('../images/giftVoucherLeft.png')
+}
+
+.gift-voucher-modal__content:before {
+	right: 0;
+	transform: translate(20%,-50%);
+	width: 61%;
+	padding-top: 36.14%;
+	height: 510px;
+	background-image: url('../images/giftVoucherRight.png')
+}
+
+.gift-voucher-modal__desc, .gift-voucher-modal__sbutitle, .gift-voucher-modal__title {
+	font-size: 32px;
+	line-height: 60px;
+	font-family: Gilroy,sans-serif;
+	font-weight: 500;
+	color: #453283;
+	max-width: 60%
+}
+
+.gift-voucher-modal__title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 16px;
+	margin-bottom: 36px
+}
+
+.gift-voucher-modal__sbutitle {
+	margin-top: 0;
+	margin-bottom: 16px
+}
+
+.gift-voucher-modal__desc {
+	line-height: 48px
+}
+
+.gift-voucher-modal__link {
+	text-align: center;
+	border: none;
+	background: #f8e71c;
+	text-decoration: none;
+	box-shadow: 0 10px 30px rgba(49,40,82,.05);
+	border-radius: 6px;
+	padding: 32px 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Gilroy,sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+	cursor: pointer;
+	max-width: 500px;
+	color: #453283;
+	transition: .3s;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1
+}
+
+.gift-voucher-modal__link:hover {
+	background-color: #f3e107;
+	box-shadow: 0 10px 30px rgba(49,40,82,.05),0 0 5px 0 #8275ab
+}
+
+@media (max-width:1680px) {
+	.gift-voucher-modal__content {
+		text-align: left;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 110px
+	}
+
+	.gift-voucher-modal__link {
+		position: relative;
+		padding: 24px 40px;
+		z-index: 2;
+		display: inline-flex
+	}
+
+	.gift-voucher-modal__desc, .gift-voucher-modal__sbutitle {
+		font-size: 26px;
+		line-height: 32px
+	}
+
+	.gift-voucher-modal__title {
+		font-size: 42px;
+		line-height: 46px
+	}
+}
+
+@media (max-width:1200px) {
+	.gift-voucher-modal__content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 80px
+	}
+
+	.gift-voucher-modal__link {
+		padding: 16px 32px;
+		font-size: 18px;
+		line-height: 24px;
+		max-width: 340px
+	}
+
+	.gift-voucher-modal__desc, .gift-voucher-modal__sbutitle {
+		font-size: 24px;
+		line-height: 28px
+	}
+
+	.gift-voucher-modal__title {
+		font-size: 36px;
+		line-height: 36px
+	}
+
+	.gift-voucher-modal__content:before {
+		background-position: -60px center;
+		transform: translate(30%,-50%)
+	}
+}
+
+@media (max-width:768px) {
+	.gift-voucher-modal__content {
+		padding: 30px 50px;
+		width: 95%
+	}
+
+	.gift-voucher-modal__content:after {
+		display: none
+	}
+
+	.gift-voucher-modal__content:before {
+		position: static;
+		height: auto;
+		transform: none;
+		display: block;
+		width: 100px;
+		padding-top: 80px;
+		background-position: center;
+		background-image: url('../images/successPresents.png');
+		margin: 0 auto
+	}
+
+	.gift-voucher-modal__desc, .gift-voucher-modal__sbutitle, .gift-voucher-modal__title {
+		max-width: 100%
+	}
+
+	.gift-voucher-modal__title {
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: 16px
+	}
+}
+
+@media (max-width:576px) {
+	.gift-voucher-modal__content {
+		padding: 30px 15px;
+		width: 95%
+	}
+
+	.gift-voucher-modal__title {
+		font-size: 26px
+	}
+
+	.gift-voucher-modal__desc, .gift-voucher-modal__sbutitle {
+		font-size: 18px
+	}
+
+	.gift-voucher-modal__link {
+		font-size: 16px;
+		padding: 12px
+	}
+}

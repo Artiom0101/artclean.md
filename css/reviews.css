@@ -1,0 +1,441 @@
+.review__items, .review__stars {
+	flex-direction: row;
+	display: flex
+}
+
+.review {
+	max-width: 1132px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative
+}
+
+.review__rate, .review__text {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400
+}
+
+.review__items {
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 24px 0 0;
+	padding: 0;
+	overflow: hidden;
+	gap: 24px
+}
+
+.review__item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 16px;
+	box-sizing: border-box;
+	width: 362px;
+	min-height: 228px;
+	background: #f9f8ff;
+	border-radius: 12px;
+	flex: 1 0 306px
+}
+
+.review__text {
+	font-size: 16px;
+	line-height: 24px;
+	color: #323c47;
+	max-width: 330px;
+	margin: 0
+}
+
+	.review__text::-webkit-scrollbar {
+		display: none
+	}
+
+	.review__text p {
+		margin: 0
+	}
+
+.review__stars {
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 8px
+}
+
+.review__star {
+	width: 14.38px;
+	height: 13.68px;
+	margin-right: 2px
+}
+
+.review__rate {
+	font-size: 12px;
+	line-height: 16px;
+	color: #868f96;
+	margin: 0
+}
+
+.review__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin: 12px 0 0;
+	justify-self: baseline
+}
+
+.review__avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%
+}
+
+.review__person {
+	margin-left: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start
+}
+
+.review__date, .review__name {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 400;
+	margin: 0;
+	padding: 0
+}
+
+.review__name {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323c47;
+	max-width: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.review__date {
+	font-size: 12px;
+	line-height: 15px;
+	color: #868f96
+}
+
+.comments__item::before {
+	content: ''
+}
+
+.comments__item {
+	text-align: left
+}
+
+.comments__container {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.comments__item, .comments__item_head .name {
+	font-family: 'Nunito Sans'
+}
+
+.comments__container {
+	max-width: 805px;
+	padding-top: 10px
+}
+
+.comments__avatar .comments__avatar-cyrcle {
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 2px solid #ececec;
+	-webkit-transition: border .4s;
+	transition: border .4s
+}
+
+.comments__avatar.slick-current .comments__avatar-cyrcle {
+	height: 38px;
+	width: 38px;
+	border: 4px solid #0d253e;
+	background-color: #f8e71c
+}
+
+.comments__item {
+	position: relative;
+	outline: 0;
+	background-color: #fff;
+	border: 1px solid #d7dfe5;
+	border-radius: 6px;
+	margin-top: 20px;
+	padding: 14px 38px;
+	font-size: 15px;
+	color: #354052
+}
+
+.comments__item .bottom {
+	display: none;
+	width: 100%;
+	font-family: 'Nunito Sans'
+}
+
+.comments__item .bottom .name {
+	font-family: 'Nunito Sans';
+	font-size: 16px;
+	color: #50606b;
+	font-weight: 600;
+	width: 100%;
+	text-align: center
+}
+
+.comments__item_head {
+	display: flex;
+	justify-content: space-between
+}
+
+.comments__item_head .left {
+	display: flex;
+	align-items: center;
+	vertical-align: top
+}
+
+.comments__item_head .left .avatar {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px
+}
+
+.comments__item_head .left-wrap {
+	display: flex;
+	flex-direction: column-reverse
+}
+
+.comments__item_head img {
+	height: 16px;
+	width: 16px
+}
+
+.comments__item_head .right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 27px
+}
+
+.comments__item_head .name {
+	font-size: 13px;
+	color: #50606b;
+	font-weight: 600;
+	margin-bottom: 5px
+}
+
+.comments__item .recommend {
+	color: #323c47;
+	font-family: 'Nunito Sans ExtraBold',sans-serif;
+	font-size: 16px;
+	margin-top: 5px
+}
+
+.comments__item_head .date {
+	color: #7e8a93;
+	font-family: 'Nunito Sans';
+	font-size: 13px;
+	font-weight: 400
+}
+
+.comments__item_head .likes {
+	margin: 7px 0 0;
+	opacity: .6
+}
+
+.comments__item_text {
+	margin: 0 auto;
+	padding: 0 10% 0 0
+}
+
+.comments__item_text p {
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: 'Nunito Sans';
+	color: #000;
+	line-height: 1.28
+}
+
+.comments__item_stars {
+	margin: 0;
+	padding-top: 10px;
+	unicode-bidi: bidi-override;
+	direction: rtl
+}
+
+.comments__item_stars label {
+	font-size: 20px;
+	position: relative;
+	cursor: pointer;
+	color: #dfe3e4
+}
+
+.comments__item_stars label:not(:last-of-type) {
+	margin-left: 10px
+}
+
+.comments__item_stars .visuallyhidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px,1px,1px,1px)
+}
+
+.comments__item_stars label:after {
+	content: '\e801';
+	-webkit-transform: scale(2);
+	position: absolute;
+	z-index: 4;
+	left: 0;
+	top: 3px;
+	-webkit-transition: .4s;
+	transition: .4s;
+	opacity: 0;
+	color: inherit;
+	visibility: hidden
+}
+
+.comments__item_stars input + label:hover:after, .comments__item_stars input + label:hover ~ label:after, .comments__item_stars input:checked ~ label:after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1)
+}
+
+.comments__item_stars input + label:hover:before, .comments__item_stars input + label:hover ~ label:before, .comments__item_stars input:checked ~ label:before {
+	opacity: 1
+}
+
+.comments__item_stars input + label:before {
+	content: '\e800';
+	opacity: 1;
+	-webkit-transition: opacity .3s ease-in-out,color .3s ease-in-out;
+	transition: opacity .3s ease-in-out,color .3s ease-in-out;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden
+}
+
+.comments__item_stars input + label:after, .comments__item_stars input + label:before {
+	color: #f1c40f
+}
+
+.comments__item_text {
+	margin-top: 10px;
+	position: relative;
+	height: 80px;
+	overflow: hidden
+}
+
+.feedback-page .main {
+	background-image: url(../images/feedback_bg.jpg);
+	background-size: 100% auto;
+}
+
+.reviews-order_now, .reviews-order_now .title {
+	text-align: center
+}
+
+.reviews-order_now {
+	background-size: cover;
+	background-position: center;
+	margin-top: 30px;
+	border-bottom: 1px solid #d7dfe5
+}
+
+.reviews-order_now .title {
+	/*margin-top: 172px;*/
+	margin-bottom: 32px;
+	color: #21143f;
+	font-family: 'Nunito Sans ExtraBold',sans-serif;
+	font-size: 37px;
+	letter-spacing: -.12px;
+	line-height: 50px;
+	text-align: center
+}
+
+.reviews-order_now .btn {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	width: 230px;
+	border-radius: 4px;
+	background-color: #35d073;
+	color: #fff;
+	font-family: 'Nunito Sans';
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: -.05px;
+	line-height: 22px;
+	margin: 0 auto;
+	text-transform: none
+}
+
+.order_now .btn:hover {
+	box-shadow: 0 0 20px 0 rgba(53,208,115,.4)
+}
+
+@media screen and (max-width:1170px) {
+	.comments__container .arrow-left {
+		left: 0
+	}
+
+	.comments__container .arrow-right {
+		right: 0
+	}
+}
+
+@media screen and (max-width:780px) {
+	.comments__container {
+		padding: 0 10px
+	}
+}
+
+@media screen and (max-width:600px) {
+	.review {
+		padding: 0
+	}
+}
+
+@media screen and (max-width:500px) {
+	.comments__item {
+		padding: 10px;
+		font-size: 3.4vw
+	}
+
+	.comments__item_head .right {
+		padding-left: 3vw
+	}
+
+	.comments__item_head .name, .comments__item_stars label {
+		font-size: 4.6vw
+	}
+
+	.comments__item_stars label:not(:last-of-type) {
+		margin-left: 2vw
+	}
+}
+
+@media screen and (max-width:480px) {
+	.comments__item_head .name {
+		font-size: 14px
+	}
+
+	.comments__item .comments__item_text {
+		padding: 0
+	}
+
+	.comments__item .bottom {
+		display: flex;
+		justify-content: center
+	}
+
+	.comments__item_head .left {
+		width: 57%
+	}
+}

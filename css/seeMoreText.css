@@ -1,0 +1,31 @@
+.js-see-more-link,
+.js-see-less-link {
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 16px;
+	/* identical to box height, or 150% */
+	text-decoration: none;
+	/* Main / Purple */
+
+	color: #8365ff;
+	display: block;
+}
+.js-see-more-link:hover,
+.js-see-less-link:hover {
+	text-decoration: none;
+	color: #8365ff;
+}
+.js-text-more-expanded {
+	display: block;
+	height: auto;
+}
+
+.js-text-more-toggled {
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}

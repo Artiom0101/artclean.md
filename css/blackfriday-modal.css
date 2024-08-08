@@ -1,0 +1,46 @@
+.blackfriday-modal_content-wrap {
+	border-radius: 0;
+	padding: 0;
+	max-width: initial;
+	background-image: none;
+	width: auto;
+	display: flex;
+	width: fit-content
+}
+
+.blackfriday-modal .close-btn {
+	color: #f7f7f7;
+	right: 3px
+}
+
+.blackfriday-modal_content-wrap .img-banner_mobile {
+	display: none;
+	object-fit: cover
+}
+
+.blackfriday-modal_content-wrap .img-banner_desktop {
+	object-fit: cover
+}
+
+@media screen and (max-width:980px) {
+	.blackfriday-modal_content-wrap {
+		max-height: 440px;
+		height: 80vh
+	}
+}
+
+@media screen and (max-width:767.9999px) {
+	.blackfriday-modal_content-wrap {
+		max-height: 60vh;
+		max-width: 90vw;
+		height: auto
+	}
+
+	.blackfriday-modal_content-wrap .img-banner_mobile {
+		display: block
+	}
+
+	.blackfriday-modal_content-wrap .img-banner_desktop {
+		display: none
+	}
+}

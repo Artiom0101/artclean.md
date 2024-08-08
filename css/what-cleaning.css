@@ -1,0 +1,679 @@
+.what-cleaning-mob, svg:not(:root) {
+    overflow: hidden
+}
+
+.what-cleaning-mob .section_title {
+    font-family: 'Nunito Sans';
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #453283
+}
+
+.what_body {
+    padding-bottom: unset
+}
+
+.what_body .container {
+    max-width: unset;
+    padding: 0
+}
+
+.pricing_items_control {
+    padding: 0
+}
+
+.pricing_items_content_page {
+    position: relative
+}
+
+.pricing_item_btn.open svg, .pricing_item_btn:hover svg .service_item_btn.open svg {
+    fill: #fff
+}
+
+.pricing_items_content_page a:hover {
+    box-shadow: 0 0 20px 0 rgba(53,208,115,.4)
+}
+
+.pricing_item_btn.open, .pricing_item_btn:hover {
+    border-bottom: 3px solid #42337e;
+    font-weight: 700;
+    font-size: 20px;
+    color: #67589b
+}
+
+.pricing_items_control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 110px
+}
+
+.pricing_item_btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 32px;
+    margin: 0 20px;
+    text-align: center;
+    color: #655997;
+    -webkit-transition: color .4s,background-color .4s;
+    transition: color .4s,background-color .4s;
+    cursor: pointer;
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    width: 145px
+}
+
+.pricing_item_btn:first-of-type svg {
+    fill: #17b135
+}
+
+.pricing_item_btn svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    vertical-align: middle;
+    fill: #da3549;
+    -webkit-transition: fill .4s;
+    transition: fill .4s
+}
+
+.pricing_item_btn img {
+    margin-right: 24px
+}
+
+.days .pricing_item_content_page .section_title {
+    padding-top: 100px;
+    background-color: #f8f8ff
+}
+
+.pricing_items_content_page a {
+    background-color: #35d073;
+    font-weight: 600;
+    transition: .4s;
+    text-decoration: none
+}
+
+.pricing_items_content_page .section_title {
+    background-color: #f8f8ff;
+    padding-top: 80px
+}
+
+.pricing_items_content_page .btn-wrap {
+    padding: 35px 0 60px;
+    background-color: #f8f8ff
+}
+
+.pricing_items_content_page a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 48px;
+    width: 230px;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Nunito Sans';
+    font-size: 18px;
+    letter-spacing: -.05px;
+    line-height: 22px;
+    cursor: pointer
+}
+
+.cleaning_room {
+    text-decoration: none
+}
+
+.cleaning_rooms {
+    text-align: center
+}
+
+.cleaning_room .enabled, .cleaning_room.open .disabled {
+    display: none
+}
+
+.cleaning_room.open .enabled {
+    display: block
+}
+
+.cleaning_room .title, .included_info {
+    font-family: 'Nunito Sans';
+    text-align: center
+}
+
+.cleaning_room, .cleaning_rooms {
+    display: flex;
+    position: relative
+}
+
+.cleaning_rooms {
+    justify-content: center;
+    z-index: 2
+}
+
+.cleaning_room {
+    flex-direction: column;
+    align-items: center;
+    width: 228px;
+    padding: 52px 10px 0 18px;
+    margin: 0;
+    vertical-align: middle
+}
+
+.cleaning_room .img_wrap img {
+    height: 66px;
+    width: 77px
+}
+
+.cleaning_room + .cleaning_room:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 120px;
+    width: 1px;
+    background-color: #dae4ea
+}
+
+.cleaning_room.open {
+    border-bottom: 4px solid #42337e
+}
+
+.cleaning_room.open .title {
+    color: #323c47;
+    font-weight: 700
+}
+
+.cleaning_room .img_wrap {
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    height: 66px;
+    vertical-align: middle
+}
+
+.cleaning_room .title {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: rgba(66,51,126,.8);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -.05px;
+    line-height: 22px
+}
+
+.included_wrap {
+    background-repeat: no-repeat
+}
+
+.included_list .btn {
+    display: none
+}
+
+.included_list-wrap {
+    display: flex;
+    justify-content: center
+}
+
+.tabs_page_office {
+    margin-top: 30px
+}
+
+.tabs_page_home .included_wrap.tabs_content:first-child {
+    background-image: url(../images/new-bg.jpg)
+}
+
+.tabs_page_home .included_wrap.tabs_content:nth-child(2) {
+    background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/bathroom.jpg)
+}
+
+.tabs_page_home .included_wrap.tabs_content:nth-child(3) {
+    background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/kitchen.jpg)
+}
+
+.tabs_page_home .included_wrap.tabs_content:nth-child(4) {
+    background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/stairs.jpg)
+}
+
+.tabs_page_office .included_wrap.tabs_content:first-child {
+    background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/office_bg.jpg)
+}
+
+.tabs_content_wrap {
+    position: relative
+}
+
+.tabs_content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1
+}
+
+.tabs_content.new_bg {
+    background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/room-bg.png)
+}
+
+.tabs_content.open {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5
+}
+
+.tabs_btn {
+    cursor: pointer
+}
+
+.included_wrap {
+    background-size: cover;
+    background-position: center
+}
+
+.included_list {
+    display: inline-block;
+    border-radius: 4px
+}
+
+.included_wrap {
+    padding-top: 50px;
+    display: flex;
+    height: 575px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column
+}
+
+.included_wrap .left_text {
+    display: inline-block;
+    width: 57%;
+    padding-left: 18.4%;
+    padding-bottom: 33px;
+    vertical-align: middle
+}
+
+.included_wrap .title {
+    margin-bottom: 44px;
+    color: #fff;
+    text-shadow: 0 0 50px 0 #0d253e;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 60px
+}
+
+.included_list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 45px 5px 35px;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 0 0 60px 10px rgba(13,37,62,.1);
+    border-radius: 0
+}
+
+
+.included_info {
+    border-top: 1px solid #dae4ea;
+    padding: 29px 0 0;
+    width: 70%;
+    color: #323c47;
+    font-size: 18px;
+    letter-spacing: -.06px;
+    line-height: 26px;
+    font-weight: 300
+}
+
+.included_list .list_title {
+    margin-bottom: 54px;
+    color: #0d253e;
+    font-family: Roboto,sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px
+}
+
+.included_list .list {
+    width: 43%;
+    display: flex;
+    flex-direction: column
+}
+
+.included_list .list_item {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 19px;
+    color: #323c47;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -.06px;
+    line-height: 24px;
+    list-style-type: none
+}
+
+.included_list .list_item::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background-image: url(../images/included_check.svg)
+}
+
+.included-service-card h3 {
+    color: #323c47;
+    font-family: 'Nunito Sans'
+}
+
+.included-service-card {
+    padding: 32px;
+    width: 60%
+}
+
+.included-service-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 22px
+}
+
+.days .section_title {
+    margin: 80px 0 0;
+    padding: 0 5px 24px
+}
+
+.days .included-services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin-bottom: 32px
+}
+
+.days .subtitle {
+    color: #50606b;
+    margin: auto;
+    background-color: #f8f8ff;
+    font-family: 'Nunito Sans';
+    font-size: 16px;
+    letter-spacing: -.05px;
+    line-height: 24px;
+    padding: 0 25px;
+    text-align: center
+}
+
+@media screen and (max-width:1600px) {
+    .included_info, .included_list {
+        width: 90%
+    }
+
+    .included_wrap .left_text {
+        width: 60%;
+        padding-left: 6%
+    }
+
+    .included_list {
+        max-width: 100%;
+        padding: 45px 3% 35px 2%
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .included_wrap .title {
+        font-size: 30px
+    }
+
+    .included_list .list_title {
+        font-size: 26px
+    }
+
+    .included_list .list_item {
+        font-size: 18px;
+        margin-bottom: 18px
+    }
+
+    .tabs_content.new_bg {
+        background-image: linear-gradient(0deg,rgba(7,26,46,.7) 0,rgba(24,79,136,.2) 100%),url(../images/room-bg-2.jpg)
+    }
+}
+
+@media screen and (max-width:960px) {
+    .included_list .list_item br, .included_wrap .left_text .btn {
+        display: none
+    }
+
+    .included_wrap .title {
+        margin-top: 3vw;
+        margin-bottom: 16px;
+        text-align: center;
+        line-height: 36px
+    }
+
+    .included_wrap .left_text {
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 0
+    }
+
+    .included_list {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 5%
+    }
+
+    .included_list .list {
+        width: 50%
+    }
+
+    .included_info {
+        margin: auto
+    }
+
+    .included_list .btn {
+        display: inline-block
+    }
+
+    .included_list .list_title {
+        margin-top: 0;
+        margin-bottom: 20px
+    }
+
+    .included_list .list_item {
+        margin-bottom: 8px
+    }
+}
+
+@media screen and (max-height:900px) {
+    .included_list .list_item {
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width:780px) {
+    .cleaning_room .title {
+        display: none
+    }
+
+    .cleaning_room + .cleaning_room:before {
+        height: 75px
+    }
+
+    .cleaning_room .img_wrap {
+        width: 100%
+    }
+
+    .cleaning_rooms {
+        font-size: 0;
+        padding: 0 20px;
+        margin-top: 20px
+    }
+
+    .cleaning_room {
+        width: 120px;
+        padding: 10px
+    }
+
+    .cleaning_room:first-child {
+        padding: 10px
+    }
+
+    .cleaning_room:first-child img {
+        margin-left: 0
+    }
+
+    .included_list {
+        display: block;
+        max-width: 80%;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 5%
+    }
+
+    .included_list .list {
+        width: 50%
+    }
+
+    .included_info {
+        margin: auto
+    }
+
+    .tabs_content_wrap {
+        margin-left: -10px;
+        margin-right: -10px
+    }
+}
+
+@media screen and (max-width:680px) {
+    .included_wrap {
+        padding-top: 0
+    }
+
+    .included_list-wrap {
+        flex-direction: column
+    }
+
+    .included_list {
+        padding-top: 40px
+    }
+
+    .included_list .list {
+        margin: 0;
+        width: 100%
+    }
+
+    .included_list .list_item {
+        margin-bottom: 20px
+    }
+
+    .included_info {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:500px) {
+    .pricing_items_content_page a {
+        width: 90%
+    }
+
+    .pricing_items_content_page .section_title {
+        padding-top: 35px
+    }
+
+    .pricing_items_content_page .btn-wrap {
+        padding: 35px 0 45px
+    }
+
+    .cleaning_rooms .cleaning_room {
+        border-bottom: 0
+    }
+
+    .cleaning_rooms {
+        background-color: #fff
+    }
+
+    .tabs_page_home .included_wrap.tabs_content {
+        background-image: none
+    }
+
+    .included_list {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        background-color: #fff
+    }
+
+    .included_info {
+        padding-top: 10px;
+        font-size: 14px
+    }
+
+    .included_list .list_item {
+        font-size: 14px;
+        padding-left: 10px
+    }
+
+    .included_list .list_title, .included_wrap .title {
+        font-size: 20px
+    }
+
+    .included_list .list {
+        padding-left: 30px
+    }
+
+    .included_list .list_item::before {
+        width: 20px;
+        height: 20px;
+        background-size: cover
+    }
+}
+
+@media screen and (max-width:480px) {
+    .what_body .container {
+        padding-inline: 0 !important
+    }
+
+    .pricing_item_btn img {
+        margin-right: 5px
+    }
+
+    .pricing_item_btn {
+        font-size: 18px;
+        line-height: 28px
+    }
+
+    .pricing_items_content_page a {
+        margin-top: 0
+    }
+}

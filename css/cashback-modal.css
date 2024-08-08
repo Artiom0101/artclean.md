@@ -1,0 +1,350 @@
+.cashback-modal {
+	display: block;
+}
+
+.cashback_mobile {
+	display: none
+}
+
+.cashback-modal_content-wrap {
+	background-color: #f0ebff;
+	padding: 50px 50px 50px 8.54%;
+	max-width: 1240px;
+	height: 80vh;
+	max-height: 575px;
+	background-size: auto 100%;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-image: url(../images/cashback-banner.png)
+}
+
+.cashback-modal_logo {
+	width: 125px;
+	padding-top: 9px;
+	margin-bottom: 60px
+}
+
+.cashback-modal_content h2 {
+	max-width: 510px
+}
+
+.cashback-modal_content p {
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 400;
+	margin-top: 0;
+	color: #211a52
+}
+
+.cashback-modal_content .cashback-modal_form .error_code {
+	font-size: 12px;
+	line-height: 24px;
+	color: #f84733
+}
+
+.cashback-modal_content .cashback-modal_form {
+	display: flex;
+	max-width: 619px
+}
+
+.cashback-modal_content .cashback-modal_form button {
+	border: 0;
+	color: #fff;
+	background-color: #35d073;
+	font-weight: 600;
+	margin-left: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: 'Nunito Sans';
+	outline: 0;
+	-webkit-transition: box-shadow .4s;
+	transition: box-shadow .4s;
+	display: block;
+	width: 45%;
+	height: 57px;
+	margin-bottom: 16px;
+	border-radius: 6px;
+	font-size: 16px;
+	text-align: center
+}
+
+.cashback-modal_content .cashback-modal_form label {
+	margin-bottom: 16px;
+	display: block;
+	width: 55%
+}
+
+.cashback-modal_content .cashback-modal_form input {
+	display: block;
+	height: 57px;
+	width: 100%;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	border: 2px solid #d5cbf1;
+	color: #211a52;
+	outline-color: #ffcc01
+}
+
+.cashback-modal_wrap {
+	width: 700px;
+	position: absolute;
+	right: 0;
+	background-color: #fff;
+	font-family: 'Nunito Sans'
+}
+
+.cashback-modal_main {
+	position: relative;
+	margin-top:20px;
+}
+
+.cashback-modal_title {
+	font-family: 'Nunito Sans';
+	color: #453283;
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0;
+	margin: 32px 80px 0 32px;
+	text-align: left
+}
+
+.cashback-modal_list {
+	position: absolute;
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0 0 32px;
+	top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: left
+}
+
+.cashback-modal_list_item {
+	color: #453283;
+	font-weight: 700
+}
+
+.cashback_wave {
+	margin-bottom: -4px
+}
+
+.cashback-form_wrapper {
+	height: 100vh;
+	background: #F0ECFF;
+	text-align: -webkit-center;
+}
+
+.cashback_terms {
+	font-family: Nunito Sans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #8365FF;
+	float: left;
+	margin: 20px 0 0 32px;
+}
+
+.cashback_terms:hover, .mobile-cashback_terms:hover {
+	color: #8365FF;
+}
+
+.cashback-mobile_wrap {
+	width: 100vw;
+	height: max-content;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 14px 14px 0px 0px;
+	background: #FBFBFB;
+	font-family: 'Nunito Sans'
+}
+
+@media screen and (max-height:820px) {
+	.cashback-mobile_wrap {
+		bottom: -10px;	
+	}
+}
+
+.mobile-close-btn {
+	font-size: 37px !important;
+	color: #8c9197 !important;
+	top: 0px !important;
+	right: 5px !important;
+}
+
+.cashback-mobile_title {
+	font-family: Nunito Sans;
+	color: #453283;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	width: 351px;
+	text-align: left;
+	padding: 16px 16px 8px 16px
+}
+
+.cashback-mobile_list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0 0 16px;
+	top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	text-align: left
+}
+
+.mobile-cashback_terms {
+	font-family: Nunito Sans;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #8365FF;
+}
+
+.cashback_cleaner {
+	margin-bottom: -155px;
+	float: right;
+}
+
+.mobile-cashback_cleaner {
+	margin-bottom: -140px
+}
+
+.mobile-cashback_wave {
+	height: 75px;
+	width: -webkit-fill-available;
+
+}
+
+@media screen and (max-width:1100px) {	
+	.cashback-modal_content-wrap {
+		padding: 50px;
+		width: calc(100% - 32px)
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.cashback-modal_content .cashback-modal_form {
+		display: block
+	}
+
+	.cashback-modal_content .cashback-modal_form button, .cashback-modal_content .cashback-modal_form label {
+		margin-left: 0;
+		width: 70%;
+		min-width: 250px
+	}
+
+	.cashback-modal_content h2 {
+		font-size: 28px;
+		max-width: 400px
+	}
+
+	.cashback-modal_content p {
+		font-size: 24px;
+		line-height: 32px
+	}
+}
+
+@media screen and (max-width:980px) {
+	.cashback-modal_content-wrap {
+		max-height: 440px
+	}
+
+	.cashback-modal_logo {
+		margin-bottom: 24px
+	}
+}
+
+@media screen and (max-width:767.9999px) {
+	.cashback-modal_content-wrap {
+		width: 90%;
+		height: auto;
+		padding: 24px 32px 200px;
+		max-height: 90vh;
+		background-image: url(../images/cashback-bannerMob.png);
+		background-size: 100% auto;
+		background-position: bottom
+	}
+
+	.cashback-modal_content h2 {
+		font-size: 26px;
+		line-height: 36px
+	}
+
+	.cashback-modal_logo {
+		width: 87px
+	}
+
+	.cashback-modal_content .cashback-modal_form button, .cashback-modal_content .cashback-modal_form input {
+		height: 44px;
+		font-size: 18px;
+		line-height: 20px
+	}
+}
+
+@media screen and (max-width: 685px) {
+	.cashback-modal {
+		display: none;
+	}
+
+	.cashback_mobile {
+		display: block;
+		background: #323C47;
+		width: 0;
+	}
+}
+
+@media screen and (max-width:574.999px) {
+	.cashback-modal_content-wrap {
+		padding-bottom: 37%
+	}
+}
+
+@media screen and (max-width:374.999px) {
+	.cashback-modal_content .cashback-modal_form button, .cashback-modal_content .cashback-modal_form label {
+		min-width: 0;
+		width: 100%
+	}
+
+	.cashback-modal_content .cashback-modal_form button, .cashback-modal_content .cashback-modal_form input {
+		font-size: 14px
+	}
+}
+
+@media screen and (max-height: 886px) {
+	.cashback_cleaner {
+		height: 550px !important;
+	}
+}
+
+@media screen and (max-height: 836px) {
+	.cashback_cleaner {
+		height: 470px !important;
+	}
+
+	.mobile-cashback_cleaner {
+		height: 350px !important;
+	}
+}
+
+@media screen and (max-height: 760px) {
+	.mobile-cashback_cleaner {
+		height: 330px !important;
+	}
+}
+
+@media screen and (max-height: 725px) {
+	.mobile-cashback_cleaner {
+		height: 290px !important;
+	}
+}
+
+@media screen and (max-height: 670px) {
+	.mobile-cashback_cleaner {
+		height: 200px !important;
+	}
+}

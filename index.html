@@ -2067,87 +2067,87 @@
         //    };
         //});
 
-        $(function () {
-            $('.book-link').click(function () {
-                if (!(typeof hj === 'undefined')) {
-                    hj('stateChange', window.location.origin + '/postcode.html');
-                    hj('vpv', '/postcode.html');
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            let discountModal = $('.discountModal')
+    //     $(function () {
+    //         $('.book-link').click(function () {
+    //             if (!(typeof hj === 'undefined')) {
+    //                 hj('stateChange', window.location.origin + '/postcode.html');
+    //                 hj('vpv', '/postcode.html');
+    //             }
+    //         });
+    //     });
+    // </script>
+    // <script>
+    //     $(document).ready(function () {
+    //         let discountModal = $('.discountModal')
 
-            setTimeout(() => {
-                document.addEventListener("click", function (event) {
-                    var isClickInsideComponent = discountModal[0].contains(event.target);
+    //         setTimeout(() => {
+    //             document.addEventListener("click", function (event) {
+    //                 var isClickInsideComponent = discountModal[0].contains(event.target);
 
-                    if (!isClickInsideComponent) {
-                        discountModal[0].style.display = "none";
-                    }
-                });
-            }, 20000);
-        });
+    //                 if (!isClickInsideComponent) {
+    //                     discountModal[0].style.display = "none";
+    //                 }
+    //             });
+    //         }, 20000);
+    //     });
 
-        function hasConsentCookie() {
-            return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
-        }
+    //     function hasConsentCookie() {
+    //         return document.cookie.split(';').some((item) => item.trim().startsWith('cookie_consent='));
+    //     }
 
-        function setConsentCookie() {
-            document.cookie = "cookie_consent=1; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-        }
+    //     function setConsentCookie() {
+    //         document.cookie = "cookie_consent=1; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+    //     }
 
-        if (hasConsentCookie()) {
-            $('.cookies-popup').removeClass('show');
-        } else {
-            setTimeout(function () {
-                $('.cookies-popup').addClass('show');
-            }, 500);
-        }
+    //     if (hasConsentCookie()) {
+    //         $('.cookies-popup').removeClass('show');
+    //     } else {
+    //         setTimeout(function () {
+    //             $('.cookies-popup').addClass('show');
+    //         }, 500);
+    //     }
 
-        document.getElementById('okButton').addEventListener('click', function () {
-            setConsentCookie();
-            $('.cookies-popup').removeClass('show');
-        });
-    </script>
-    <script src="js/carousel.js"></script>
-    <script src="js/seeMoreText.js"></script>
+    //     document.getElementById('okButton').addEventListener('click', function () {
+    //         setConsentCookie();
+    //         $('.cookies-popup').removeClass('show');
+    //     });
+    // </script>
+    // <script src="js/carousel.js"></script>
+    // <script src="js/seeMoreText.js"></script>
 
-    <script>
-        const trustpilotBusinessUnitId = '5d08eb197f2ae8000176c4c4';
-        const trustpilotAPIUrl = "https://widget.trustpilot.com/trustbox-data/5419b6a8b0d04a076446a9ad?businessUnitId=5d08eb197f2ae8000176c4c4&locale=en-GB";
+    // <script>
+    //     const trustpilotBusinessUnitId = '5d08eb197f2ae8000176c4c4';
+    //     const trustpilotAPIUrl = "https://widget.trustpilot.com/trustbox-data/5419b6a8b0d04a076446a9ad?businessUnitId=5d08eb197f2ae8000176c4c4&locale=en-GB";
 
-        window.onload = function () {
-            fetch(trustpilotAPIUrl)
-                .then(response => response.json())
-                .then(data => {
-                    const reviewCount = data.businessEntity;
-                    const head = document.getElementsByTagName('head')[0];
-                    const trustpilotScript = document.createElement('script');
-                    trustpilotScript.setAttribute('type', 'application/ld+json')
-                    const metaJson = `{
-                                 "@context": "https://schema.org/",
-                                 "@type": "AggregateRating",
-                                 "itemReviewed": {
-                                      "@type": "Organization",
-                                      "name": "eMop"
-                                 },
-                                 "ratingValue": "${reviewCount.trustScore}",
-                                 "bestRating": "5",
-                                 "worstRating": "1",
-                                 "ratingCount": "${reviewCount.numberOfReviews.total}"
-                            }`
-                    trustpilotScript.text = metaJson;
-                    head.appendChild(trustpilotScript);
-                })
-                .catch(error => {
-                    console.error('Error fetching Trustpilot reviews:', error);
+    //     window.onload = function () {
+    //         fetch(trustpilotAPIUrl)
+    //             .then(response => response.json())
+    //             .then(data => {
+    //                 const reviewCount = data.businessEntity;
+    //                 const head = document.getElementsByTagName('head')[0];
+    //                 const trustpilotScript = document.createElement('script');
+    //                 trustpilotScript.setAttribute('type', 'application/ld+json')
+    //                 const metaJson = `{
+    //                              "@context": "https://schema.org/",
+    //                              "@type": "AggregateRating",
+    //                              "itemReviewed": {
+    //                                   "@type": "Organization",
+    //                                   "name": "eMop"
+    //                              },
+    //                              "ratingValue": "${reviewCount.trustScore}",
+    //                              "bestRating": "5",
+    //                              "worstRating": "1",
+    //                              "ratingCount": "${reviewCount.numberOfReviews.total}"
+    //                         }`
+    //                 trustpilotScript.text = metaJson;
+    //                 head.appendChild(trustpilotScript);
+    //             })
+    //             .catch(error => {
+    //                 console.error('Error fetching Trustpilot reviews:', error);
 
-                });
-        }
-    </script>
+    //             });
+    //     }
+    // </script>
 
 
 </body></html>

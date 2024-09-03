@@ -2181,7 +2181,7 @@ input.not_valid {
 
 .cleaning-content--right img {
     object-fit: contain;
-    padding-top: 55px;
+    padding-top: 75px;
     padding-left: 60px;
    
 
@@ -2267,7 +2267,6 @@ input.not_valid {
     position: absolute;
     right: 100px;
     top: 50px;
-    z-index: -2
 }
 
     .cleaning-content--right div {

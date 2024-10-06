@@ -506,14 +506,14 @@
                     <div target="_blank" href="cleaning-plan.html" class="mobile-header-link mobile-locations">
                         <a href="#" class="text-decoration-none location_mobile">Locatii</a>
                                 <ul class="see-more-locations-mobile">
-                                        <li class="mobile-location-box"><a href="/edinburgh" class="mobile-location" style="">Chișinău</a></li>
-                                        <li class="mobile-location-box"><a href="/birmingham" class="mobile-location" style="">Botanica</a></li>
-                                        <li class="mobile-location-box"><a href="/manchester" class="mobile-location" style="">Buiucani</a></li>
-                                        <li class="mobile-location-box"><a href="/st-albans" class="mobile-location" style="">Telecentru</a></li>
-                                        <li class="mobile-location-box"><a href="/glasgow" class="mobile-location" style="">Ciocana</a></li>
-                                        <li class="mobile-location-box"><a href="/leeds" class="mobile-location" style="">Durlesti</a></li>
-                                        <li class="mobile-location-box"><a href="/bradford" class="mobile-location" style="">Ialoveni</a></li>
-                                        <li class="mobile-location-box"><a href="/central-london-cleaner" class="mobile-location" style="">Riscani</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Chișinău</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Botanica</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Buiucani</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Telecentru</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Ciocana</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Durlesti</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Ialoveni</a></li>
+                                        <li class="mobile-location-box">< class="mobile-location" style="">Riscani</a></li>
                                 </ul>
 
 
@@ -523,18 +523,18 @@
                     <div target="_blank" href="cleaning-plan.html" class="mobile-header-link mobile-our-services">
                         <a href="#" class="text-decoration-none our-service-mobile">Serviciile noastre</a>
                         <ul class="mobile-our-service our-services_mobile">
-                                <li><a style="" href="/regular-cleaning">Curățenie simpla</a></li>
-                                <li><a style="" href="/one-off-deep-cleaning">Curățenie generala</a></li>
-                                <li><a style="" href="/office-cleaning">Curățenie birou</a></li>
-                                <li><a style="" href="/end-of-tenancy-cleaning">Curățenie chimica</a></li>
-                                <li><a style="" href="/carpet-cleaning">Curatarea covoarelor</a></li>
-                                <li><a style="" href="/upholstery-cleaning">Curatarea mobilei</a></li>
-                                <li><a style="" href="/same-day-cleaning">Curatarea chimica a mobilei</a></li>
-                                <li><a style="" href="/kitchen-deep-cleaning">Curatarea chimica a saltelelor</a></li>
-                                <li><a style="" href="/rug-cleaning">Curățenie bucatarie </a></li>
-                                <li><a style="" href="/move-in-cleaning">Curățenie baie</a></li>
-                                <li><a style="" href="/bathroom-cleaning">Curatarea geamurilor</a></li>
-                        </ul>
+                                   <li><a href="#" class="scroll-link">Curățenie simpla</a></li>
+                                   <li><a href="#" class="scroll-link">Curățenie generala</a></li>
+                                   <li><a href="#" class="scroll-link">Curățenie birou</a></li>
+                                   <li><a href="#" class="scroll-link">Curățenie chimica</a></li>
+                                   <li><a href="#" class="scroll-link">Curatarea covoarelor</a></li>
+                                   <li><a href="#" class="scroll-link">Curatarea mobilei</a></li>
+                                   <li><a href="#" class="scroll-link">Curatarea chimica a mobilei</a></li>
+                                   <li><a href="#" class="scroll-link">Curatarea chimica a saltelelor</a></li>
+                                   <li><a href="#" class="scroll-link">Curățenie bucatarie</a></li>
+                                   <li><a href="#" class="scroll-link">Curățenie baie</a></li>
+                                   <li><a href="#" class="scroll-link">Curatarea geamurilor</a></li>
+                         </ul>
                     </div>
                 </li>
                 <li>
@@ -2155,6 +2155,17 @@
                 });
         }
     </script>
+
+                <script>
+document.querySelectorAll('.scroll-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Previne redirecționarea implicită
+        document.querySelector('.comments-slider-section').scrollIntoView({
+            behavior: 'smooth' // Derulează lin
+        });
+    });
+});
+</script>
 
 
 </body></html>

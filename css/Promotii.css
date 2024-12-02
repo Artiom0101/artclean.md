@@ -1,0 +1,50 @@
+.marquee-container {
+    display: block;
+    width: 100%;
+    background-color: color(display-p3 0.335 0.535 1);
+    color: #ffffff;
+    padding: 10px 0;
+    overflow: hidden; 
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box; 
+}
+.marquee-container::before,
+.marquee-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px; 
+    background: linear-gradient(to right, rgb(29, 59, 255) 0%, rgba(0, 0, 255, 0) 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee-container::before {
+    left: 0;
+}
+
+.marquee-container::after {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 15s linear infinite;
+    position: relative;
+    z-index: 1; 
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}

@@ -333,6 +333,11 @@ html.show, html.show body {
     overflow: hidden;
     height: 100vh
 }
+.texth3 {
+    text-align: center;
+    padding-bottom: 50px; 
+    color: #0043a7;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Akko Rounded Pro',Roboto,sans-serif;
@@ -995,31 +1000,65 @@ input.moveStepSecond {
 }
 
 .book-btn {
-    width: 163px;
-    padding: 17px 14px;
+    width: 100%; /* Lățime flexibilă pentru a se adapta containerului */
+    max-width: 200px; /* Dimensiune maximă pentru ecrane mari */
+    padding: 1em; /* Unități relative pentru padding */
     border-radius: 4px;
     border: 0;
-    background-color: #35d073; /* Culoarea de fundal */
-    font-size: 18px;
+    background-color: color(display-p3 0.098 0.2588 0.6314); /* Culoarea de fundal */
+    font-size: 1rem; /* Unități relative pentru font */
     font-style: normal;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.05em;
     color: #fff; /* Culoarea textului */
     cursor: pointer;
-    transition: box-shadow .4s;
+    transition: box-shadow 0.4s;
+    text-align: center; /* Asigură că textul este centrat */
+    display: inline-block; /* Se comportă ca un buton */
+}
+
+/* Responsive styling pentru dimensiuni mai mici */
+@media (max-width: 768px) {
+    .book-btn {
+        max-width: 150px; /* Dimensiuni mai mici pentru tablete */
+        font-size: 0.9rem; /* Font mai mic */
+        padding: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-btn {
+        max-width: 100%; /* Se extinde pe lățimea containerului */
+        font-size: 0.8rem; /* Font redus pentru ecrane mici */
+        padding: 0.7em;
+    }
 }
 
 .book-btn button {
-    background-color: #35d073; /* Asigură-te că fundalul butonului este de aceeași culoare */
+    background-color: color(display-p3 0.098 0.2588 0.6314); /* Asigură-te că fundalul butonului este de aceeași culoare */
     border: none;
     color: white; /* Culoarea textului */
-    font-size: 18px;
+    font-size: 1rem; /* Font flexibil */
     font-weight: 700;
     cursor: pointer;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+    width: auto; /* Lățime automată */
+    height: auto; /* Înălțime automată */
+    display: inline-block; /* Permite flexibilitate */
+}
+
+/* Ajustări responsive pentru buton */
+@media (max-width: 768px) {
+    .book-btn button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-btn button {
+        font-size: 0.8rem;
+    }
 }
 
 .order_now {
@@ -2258,7 +2297,7 @@ input.not_valid {
 }
 
 .cleaning-content--left {
-    width: 67%;
+    width: 100%;
     margin-bottom: 95px
 }
 

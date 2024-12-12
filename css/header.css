@@ -601,7 +601,7 @@
 }
 
 .header_main h1, .header_main h2 {
-	text-align: left
+	text-align: center
 }
 
 .header_main {
@@ -613,15 +613,22 @@
 
 .header_main {
 	margin-top: -17px;
-	background-color: #f0ecff
+    height: 90vh; /* Asigură înălțimea secțiunii */
+    background-color: rgba(204, 218, 255, 0.978); /* Culoarea cu 50% opacitate */
+    background-image: url('https://i.pinimg.com/1200x/20/90/dd/2090ddd79a9a1850b2c2c169915922f4.jpg');
+    background-size: cover; /* Imaginea acoperă întreaga zonă */
+    background-position: center; /* Imaginea este centrată */
+    background-blend-mode: overlay;
 }
+
 
 .header_main h1 {
 	font-size: 40px;
 	margin-bottom: 30px;
 	letter-spacing: -.12px;
 	color:#0043a7;
-	font-family:Georgia, 'Times New Roman', Times, serif
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	padding-bottom: 30px
 
 }
 

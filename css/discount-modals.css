@@ -194,8 +194,8 @@
 	}
 
 	.header_main h1 {
-		font-size: 22px;
-		margin-bottom: 70px
+		font-size: 21px;
+		margin-bottom: 10px
 	}
 
 	.header_banner h2, .package-work h2 {
@@ -248,7 +248,7 @@
 	}
 
 	.header_main .section_title {
-		padding-top: 180px
+		padding-top: 190px
 	}
 
 	.footer_location ul {

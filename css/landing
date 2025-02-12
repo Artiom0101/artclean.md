@@ -1,0 +1,147 @@
+.body1 {
+    font-family: 'Nunito Sans';
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.background-decorations1 {
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh; 
+    pointer-events: none;
+}
+
+.aurora1 {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background: url('../images/aurora.png') no-repeat center/cover;
+}
+
+.ellipse {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    background: url('../images/Ellipse.png') no-repeat center/cover;
+}
+
+.ellipse-top-left {
+    top: -10vw;
+    left: -10vw;
+}
+
+.ellipse-bottom-right {
+    bottom: -50vw;
+    right: -5vw;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.text-section1 {
+    max-width: 90%;
+}
+.text-section1 h1 {
+    font-size: 28px;
+    color: #67b4fc;
+    padding-top: 116px;
+
+}
+
+.buttons1 {
+    margin-top: 10%;
+    
+}
+.buttons1 a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 800;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.btn-primary1 {
+    background: #67c7fc;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.btn-primary1:hover {
+    background: #67c7fc;
+    transform: scale(1.05);
+}
+.btn-secondary1 {
+    border: 2px solid #67c7fc;
+    color: #67c7fc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-secondary1:hover {
+    background: #67c7fc;
+    color: white;
+    transform: scale(1.05);
+}
+
+.image-section2 img {
+    max-width: 89%;
+    height: auto;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .container1 {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 50px;
+    }
+    .text-section1 {
+        max-width: 50%;
+    }
+    .text-section1 h1 {
+        font-size: 36px;
+    }
+    .image-section2 img {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 900px) {
+    .text-section1 {
+        max-width: 80%;
+    }
+    .text-section1 h1 {
+        font-size: 46px;
+        padding-top: 60px;
+        padding-left: 15px;
+    }
+    .image-section2 img {
+        max-width: 500px;
+    }
+    .buttons1 a {
+        text-decoration: none;
+        padding: 22px 34px;
+        border-radius: 35px;
+        font-size: 20px;
+        margin: 10px;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ellipse {
+        width: 40vw;
+        height: 40vw;
+    }
+}

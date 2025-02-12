@@ -44,7 +44,7 @@ img, legend {
     font-family: 'Filson Soft';
     src: url('../fonts/Filson%20Soft%20Black.eot');
     src: url('../fonts/Filson%20Soft%20Black.eot#iefix') format("embedded-opentype"),url('../fonts/Filson%20Soft%20Black.woff2') format("woff2"),url('../fonts/Filson%20Soft%20Black.woff') format("woff"),url('../images/Filson%20Soft%20Black.svg#Filson%20Soft%20Black') format("svg");
-    font-weight: 800
+    font-weight: 800;
 }
 
 @font-face {
@@ -286,7 +286,7 @@ header svg {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito Sans';
-    font-weight: 800
+    font-weight: 800;
 }
 
 button, input, textarea {

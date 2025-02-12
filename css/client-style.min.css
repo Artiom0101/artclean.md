@@ -114,7 +114,8 @@ body {
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
-    display: block
+    display: block;
+    padding: 0px 40px;
 }
 
 h1 {
@@ -286,7 +287,7 @@ header svg {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito Sans';
-    font-weight: 400
+    font-weight: 800
 }
 
 button, input, textarea {

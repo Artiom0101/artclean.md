@@ -50,11 +50,14 @@
 
 .text-section1 {
     max-width: 90%;
+    
 }
 .text-section1 h1 {
     font-size: 28px;
     color: #67b4fc;
     padding-top: 116px;
+    font-weight: 800;
+
 
 }
 

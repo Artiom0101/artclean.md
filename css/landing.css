@@ -99,6 +99,8 @@
     max-width: 89%;
     height: auto;
     margin-top: 50px;
+     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
 @media (min-width: 768px) {

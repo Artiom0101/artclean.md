@@ -35,7 +35,7 @@
 .marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: scroll-text 15s linear infinite;
+    animation: scroll-text 25s linear infinite;
     position: relative;
     z-index: 1; 
 }
